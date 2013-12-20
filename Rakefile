@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PortlandPoliceCallWebsite::Application.load_tasks
+PDX911Calls::Application.load_tasks
