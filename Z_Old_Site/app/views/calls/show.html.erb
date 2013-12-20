@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Call:</strong>
+  <%= @call.call_id %>
+</p>
+
+<p>
+  <strong>Call type:</strong>
+  <%= @call.call_type %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @call.address %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @call.agency %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @call.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @call.longitude %>
+</p>
+
+<p>
+  <strong>Last updated:</strong>
+  <%= @call.last_updated %>
+</p>
+
+<%= link_to 'Edit', edit_call_path(@call) %> |
+<%= link_to 'Back', calls_path %>
