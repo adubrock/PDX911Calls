@@ -15,4 +15,4 @@ The PDX911Calls project is a three-phase website that logs the 911 calls in Port
 
 Version 0.1
 
-After working up a prototype, the site currently 
+After working up a prototype with initial tests and Google maps API integration, the site currently has been rebuilt to eliminate excess code and work from the beginning using TDD practices.
