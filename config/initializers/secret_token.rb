@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-PortlandPoliceCallWebsite::Application.config.secret_key_base = secure_token
+PDX911Calls::Application.config.secret_key_base = secure_token
