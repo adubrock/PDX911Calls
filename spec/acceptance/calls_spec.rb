@@ -1,25 +1,25 @@
-require 'spec_helper'
+require 'rspec/autorun'
+require './spec/spec_helper'
 
-describe 'index' do
-  
-#  let(:call) { FactoryGirl.create(:call) }
-
-  it 'should have 100 things' do
+describe 'homepage' do
+  it 'should show a list of calls' do
     visit "/"
-    page.should have_css(".call", count: 100)
-    page.should have_text("PG13000069969")
-    page.should have_text("SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR")
+    calls.should == [
+      ["Type",                "Address"],
+      ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"],
+      ["TRAFFIC STOP",        "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"],
+      ["WARRANT",             "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"],
+      ["NOISE DISTURBANCE",   "2300 BLOCK OF SE TAYLOR ST, PORTLAND, OR"],
+      ["TRAFFIC STOP",        "NW 257TH AVE / NW 257TH WAY, TROUTDALE, OR"],
+    ]
+  end
+
+  def calls
+    all(".calls tr").map do |row|
+      row.all("th,td").map do |cell|
+        cell.text
+      end
+    end
   end
 end
 
-=begin
-describe 'index' do
-  it 'displays the last 100 calls' do
-    @calls.count.should == 100    
-  end
-
-  it 'has valid data' do
-    @calls.should include("PP13000411200")
-  end
-end
-=end
