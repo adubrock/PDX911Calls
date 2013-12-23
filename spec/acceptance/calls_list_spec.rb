@@ -3,14 +3,17 @@ require './spec/spec_helper'
 
 describe 'homepage' do
   it 'should show a list of calls' do
+    Call.create! type: "PERSON CONTACT (86)", address: "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"
+    Call.create! type: "TRAFFIC STOP",        address: "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"
+    Call.create! type: "WARRANT",             address: "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"
+
     visit "/"
+
     calls.should == [
       ["Type",                "Address"],
       ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"],
       ["TRAFFIC STOP",        "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"],
       ["WARRANT",             "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"],
-      ["NOISE DISTURBANCE",   "2300 BLOCK OF SE TAYLOR ST, PORTLAND, OR"],
-      ["TRAFFIC STOP",        "NW 257TH AVE / NW 257TH WAY, TROUTDALE, OR"],
     ]
   end
 
