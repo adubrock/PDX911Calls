@@ -27,8 +27,4 @@ describe 'homepage' do
       end
     end
   end
-
-  after(:all) do
-    Call.delete_all
-  end
 end
