@@ -1,7 +1,17 @@
 class Call < ActiveRecord::Base
   def self.create_from_xml(file)
-    Call.create!(call_type: "PERSON CONTACT (86)",  address: "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR")
-    Call.create!(call_type: "TRAFFIC STOP",         address: "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR")
-    Call.create!(call_type: "WARRANT",              address: "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR")
+    f = File.open(file)
+    doc = Nokogiri::XML(f)
+    f.close
+
+    doc.search('entry').each do |entry|
+      entry.search('title').each do |title|
+        new_entry = title.to_s.split(/ at /)
+        new_entry.map! { |element| element.gsub("<title>","")}
+        new_entry.map! { |element| element.gsub("</title>","")}
+
+        Call.create!(call_type: new_entry[0], address: new_entry[1])
+      end
+    end
   end
 end

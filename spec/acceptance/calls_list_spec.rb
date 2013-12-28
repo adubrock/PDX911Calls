@@ -4,7 +4,7 @@ require './spec/spec_helper'
 describe 'homepage' do
 
   it 'converts XML in to a list of calls' do
-    Call.create_from_xml('./fixtures/call_data.cfm')
+    Call.create_from_xml('spec/fixtures/call_data.cfm')
 
     visit "/"
 
