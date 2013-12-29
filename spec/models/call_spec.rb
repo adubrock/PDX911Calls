@@ -7,19 +7,21 @@ describe Call do
   its(:address) { should be_nil }
   
   it "converts XML in to calls" do
-    Call.create_from_xml('spec/fixtures/call_data.cfm')
-    Call.count.should == 3
+    Call.import_from_xml_uri(File.open("spec/fixtures/call_data.cfm"))
+    call_attributes = Call.all.map { |call| call.attributes.values_at("call_type", "address") }
+    call_attributes.should == [
+    ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"],
+    ["TRAFFIC STOP", "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"],
+    ["WARRANT", "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"]
+    ]
   end
 
-  it 'pulls the call_type from the XML' do
-    Call.create_from_xml('spec/fixtures/call_data.cfm')
-    Call.first.attributes.should include("call_type" => "PERSON CONTACT (86)")
-    Call.last.attributes.should include("call_type" => "WARRANT")
-  end
-
-  it 'pulls the address from the XML' do
-    Call.create_from_xml('spec/fixtures/call_data.cfm')
-    Call.first.attributes.should include("address" => "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR")
-    Call.last.attributes.should include("address" => "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR")
+  it 'gets XML from a remote server' do
+    VCR.use_cassette('xml_data') do
+      Call.import_from_xml_uri("http://www.portlandonline.com/scripts/911incidents.cfm")
+      Call.count.should == 100
+      Call.first.attributes.should include("call_type" => "UNDESCRIBED INCIDENT")
+      Call.first.attributes.should include("address" => "2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR")
+    end
   end
 end

@@ -1,0 +1,885 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.portlandonline.com/scripts/911incidents.cfm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/xml
+      Server:
+      - Microsoft-IIS/7.5
+      Date:
+      - Sun, 29 Dec 2013 01:51:12 GMT
+      Set-Cookie:
+      - BIGipServercgis_pol_web_pool-http=1225091850.20480.0000; path=/
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\"
+        xmlns:georss=\"http://www.georss.org/georss\">\n\t<id>urn:uuid:2c8b4910-e5c4-11de-8a39-0800200c9a66</id>\n\t<title>Portland
+        911 Dispatch Incidents</title>\n\t<subtitle>Recent 911 dispatch incidents
+        in Portland, Oregon </subtitle>\n\t<link href=\"http://www.portlandonline.com/scripts/911incidents.cfm\"
+        rel=\"self\"/>\n\t<updated>2013-12-28T17:51:12.939-08:00</updated>\n\t<author>\n\t\t<name>City
+        of Portland</name>\n\t\t<email>cgis@portlandoregon.gov</email>\n\t</author>\n\t<icon>http://www.portlandoregon.gov/bibs/article/87997</icon>\n\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072425</id>\n\t\t\t<title>UNDESCRIBED
+        INCIDENT at 2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:47:10.0-08:00</updated>\n\t\t\t<summary>UNDESCRIBED
+        INCIDENT at 2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR [Gresham Police #PG13000072425]</summary>\n\t\t\t<category
+        label=\"UNDESCRIBED INCIDENT\" term=\"UNDESCRIBED INCIDENT\"/>\n\t\t\t<published>2013-12-28T17:44:07.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.514193
+        -122.457471</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072425&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNDESCRIBED INCIDENT&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2400
+        BLOCK OF NW BURNSIDE CT, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:47:10 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423075</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at 2300 BLOCK OF SE 82ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:43:17.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at 2300 BLOCK OF SE 82ND AVE, PORTLAND, OR [Portland Police #PP13000423075]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T17:41:46.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.506009
+        -122.577574</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423075&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2300
+        BLOCK OF SE 82ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:43:17 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423073</id>\n\t\t\t<title>UNWANTED
+        PERSON at NE 137TH AVE / NE SAN RAFAEL ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:49:15.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at NE 137TH AVE / NE SAN RAFAEL ST, PORTLAND, OR [Portland Police #PP13000423073]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T17:39:32.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.537280
+        -122.522217</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423073&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        137TH AVE / NE SAN RAFAEL ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:49:15 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423072</id>\n\t\t\t<title>TRAFFIC
+        STOP at SB SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY</title>\n\t\t\t<updated>2013-12-28T17:43:11.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SB SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY [Portland Police
+        #PP13000423072]</summary>\n\t\t\t<category label=\"TRAFFIC STOP\" term=\"TRAFFIC
+        STOP\"/>\n\t\t\t<published>2013-12-28T17:36:13.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.480587
+        -122.680260</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423072&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SB
+        SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:43:11 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072423</id>\n\t\t\t<title>TRAFFIC
+        STOP at NE 172ND AVE / NE GLISAN ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:36:18.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at NE 172ND AVE / NE GLISAN ST, GRESHAM, OR [Gresham Police #PG13000072423]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:35:01.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.526414
+        -122.486120</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072423&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        172ND AVE / NE GLISAN ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:36:18 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PA13000025325</id>\n\t\t\t<title>PROPERTY
+        LOST, FOUND, RECOVERED at 0  CONCOURSE E PIA , PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:40:02.0-08:00</updated>\n\t\t\t<summary>PROPERTY
+        LOST, FOUND, RECOVERED at 0  CONCOURSE E PIA , PORTLAND, OR [Airport Police
+        #PA13000025325]</summary>\n\t\t\t<category label=\"PROPERTY LOST, FOUND, RECOVERED\"
+        term=\"PROPERTY LOST, FOUND, RECOVERED\"/>\n\t\t\t<published>2013-12-28T17:33:10.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.589609
+        -122.591172</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PA13000025325&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PROPERTY LOST, FOUND, RECOVERED&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;0
+        \ CONCOURSE E PIA , PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Airport
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:40:02 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423070</id>\n\t\t\t<title>TRAFFIC
+        STOP at 12500 BLOCK OF SE STARK ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:35:30.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at 12500 BLOCK OF SE STARK ST, PORTLAND, OR [Portland Police #PP13000423070]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:30:53.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519001
+        -122.534265</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423070&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12500
+        BLOCK OF SE STARK ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:35:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423067</id>\n\t\t\t<title>TRIMET
+        INCIDENT - PRIORITY at N ROSA PARKS WAY / N INTERSTATE AVE</title>\n\t\t\t<updated>2013-12-28T17:44:44.0-08:00</updated>\n\t\t\t<summary>TRIMET
+        INCIDENT - PRIORITY at N ROSA PARKS WAY / N INTERSTATE AVE [Portland Police
+        #PP13000423067]</summary>\n\t\t\t<category label=\"TRIMET INCIDENT - PRIORITY\"
+        term=\"TRIMET INCIDENT - PRIORITY\"/>\n\t\t\t<published>2013-12-28T17:30:48.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.569891
+        -122.682255</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423067&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRIMET INCIDENT - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;N
+        ROSA PARKS WAY / N INTERSTATE AVE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:44:44 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423069</id>\n\t\t\t<title>TRAFFIC
+        STOP at WB I84 FWY AT / NE 12TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:35:44.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at WB I84 FWY AT / NE 12TH AVE, PORTLAND, OR [Portland Police #PP13000423069]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:29:55.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.528521
+        -122.653562</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423069&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WB
+        I84 FWY AT / NE 12TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:35:44 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423068</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at 2300 BLOCK OF SE 82ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:34:00.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at 2300 BLOCK OF SE 82ND AVE, PORTLAND, OR [Portland Police #PP13000423068]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T17:29:54.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.506009
+        -122.577574</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423068&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2300
+        BLOCK OF SE 82ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:34:00 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423064</id>\n\t\t\t<title>TRAFFIC
+        STOP at SB SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:31:38.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SB SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY, PORTLAND, OR
+        [Portland Police #PP13000423064]</summary>\n\t\t\t<category label=\"TRAFFIC
+        STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:26:36.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.480587
+        -122.680260</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423064&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SB
+        SW BARBUR BLVD TO / WB SW BEAVERTON HILLSDALE HWY, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:31:38 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048851</id>\n\t\t\t<title>HAZARD
+        - HAZARDOUS CONDITION at HWY 26 / SE STONE RD, MULTNOMAH COUNTY, OR</title>\n\t\t\t<updated>2013-12-28T17:37:48.0-08:00</updated>\n\t\t\t<summary>HAZARD
+        - HAZARDOUS CONDITION at HWY 26 / SE STONE RD, MULTNOMAH COUNTY, OR [Multnomah
+        County Sheriff #PM13000048851]</summary>\n\t\t\t<category label=\"HAZARD -
+        HAZARDOUS CONDITION\" term=\"HAZARD - HAZARDOUS CONDITION\"/>\n\t\t\t<published>2013-12-28T17:25:28.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.461280
+        -122.383120</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048851&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HAZARD - HAZARDOUS CONDITION&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HWY
+        26 / SE STONE RD, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:37:48 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072421</id>\n\t\t\t<title>MISSING
+        - PERSON LOST,FOUND,RUNNER at 300 BLOCK OF SE 196TH AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:48:08.0-08:00</updated>\n\t\t\t<summary>MISSING
+        - PERSON LOST,FOUND,RUNNER at 300 BLOCK OF SE 196TH AVE, GRESHAM, OR [Gresham
+        Police #PG13000072421]</summary>\n\t\t\t<category label=\"MISSING - PERSON
+        LOST,FOUND,RUNNER\" term=\"MISSING - PERSON LOST,FOUND,RUNNER\"/>\n\t\t\t<published>2013-12-28T17:22:43.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.520066
+        -122.460741</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072421&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MISSING - PERSON LOST,FOUND,RUNNER&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;300
+        BLOCK OF SE 196TH AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:48:08 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423059</id>\n\t\t\t<title>UNWANTED
+        PERSON at 1000 BLOCK OF SE WATER AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:46:37.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 1000 BLOCK OF SE WATER AVE, PORTLAND, OR [Portland Police #PP13000423059]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T17:21:51.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.515321
+        -122.665519</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423059&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1000
+        BLOCK OF SE WATER AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:46:37 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072422</id>\n\t\t\t<title>TRAFFIC
+        STOP at NE 181ST AVE / NE PACIFIC ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:32:55.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at NE 181ST AVE / NE PACIFIC ST, GRESHAM, OR [Gresham Police #PG13000072422]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:21:47.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.530533
+        -122.477184</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072422&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        181ST AVE / NE PACIFIC ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:32:55 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080964</id>\n\t\t\t<title>ALMCOM
+        - MONITORED COMMERCIAL FIRE ALARM at 17600 BLOCK OF NW ST HELENS RD, MULTNOMAH
+        COUNTY, OR</title>\n\t\t\t<updated>2013-12-28T17:46:30.0-08:00</updated>\n\t\t\t<summary>ALMCOM
+        - MONITORED COMMERCIAL FIRE ALARM at 17600 BLOCK OF NW ST HELENS RD, MULTNOMAH
+        COUNTY, OR [Portland Fire #RP13000080964]</summary>\n\t\t\t<category label=\"ALMCOM
+        - MONITORED COMMERCIAL FIRE ALARM\" term=\"ALMCOM - MONITORED COMMERCIAL FIRE
+        ALARM\"/>\n\t\t\t<published>2013-12-28T17:21:43.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.650035
+        -122.851340</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080964&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;ALMCOM - MONITORED COMMERCIAL FIRE
+        ALARM&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;17600
+        BLOCK OF NW ST HELENS RD, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:46:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072420</id>\n\t\t\t<title>UNWANTED
+        PERSON at 1000 BLOCK OF SW HIGHLAND DR, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:34:08.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 1000 BLOCK OF SW HIGHLAND DR, GRESHAM, OR [Gresham Police #PG13000072420]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T17:21:05.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.489547
+        -122.476441</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072420&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1000
+        BLOCK OF SW HIGHLAND DR, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:34:08 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423057</id>\n\t\t\t<title>ASSIST
+        - CITIZEN OR AGENCY at SB I5 FWY AT / EB I84 FWY EXIT, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:28:31.0-08:00</updated>\n\t\t\t<summary>ASSIST
+        - CITIZEN OR AGENCY at SB I5 FWY AT / EB I84 FWY EXIT, PORTLAND, OR [Portland
+        Police #PP13000423057]</summary>\n\t\t\t<category label=\"ASSIST - CITIZEN
+        OR AGENCY\" term=\"ASSIST - CITIZEN OR AGENCY\"/>\n\t\t\t<published>2013-12-28T17:20:53.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.528650
+        -122.665348</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423057&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;ASSIST - CITIZEN OR AGENCY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SB
+        I5 FWY AT / EB I84 FWY EXIT, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:28:31 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423055</id>\n\t\t\t<title>ACCIDENT
+        - NON INJURY at 10200 BLOCK OF NE CASCADES PKWY, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:48:12.0-08:00</updated>\n\t\t\t<summary>ACCIDENT
+        - NON INJURY at 10200 BLOCK OF NE CASCADES PKWY, PORTLAND, OR [Portland Police
+        #PP13000423055]</summary>\n\t\t\t<category label=\"ACCIDENT - NON INJURY\"
+        term=\"ACCIDENT - NON INJURY\"/>\n\t\t\t<published>2013-12-28T17:20:25.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.573556
+        -122.556066</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423055&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;ACCIDENT - NON INJURY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;10200
+        BLOCK OF NE CASCADES PKWY, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:48:12 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048850</id>\n\t\t\t<title>TRAFFIC
+        STOP at NE HALSEY ST / NE MARKET DR, FAIRVIEW, OR</title>\n\t\t\t<updated>2013-12-28T17:23:55.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at NE HALSEY ST / NE MARKET DR, FAIRVIEW, OR [Multnomah County Sheriff
+        #PM13000048850]</summary>\n\t\t\t<category label=\"TRAFFIC STOP\" term=\"TRAFFIC
+        STOP\"/>\n\t\t\t<published>2013-12-28T17:17:54.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.533852
+        -122.442148</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048850&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        HALSEY ST / NE MARKET DR, FAIRVIEW, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:23:55 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080963</id>\n\t\t\t<title>VFIRE
+        - VEHICLE OR TRAILER FIRE at 10700 BLOCK OF N UNION CT, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:32:36.0-08:00</updated>\n\t\t\t<summary>VFIRE
+        - VEHICLE OR TRAILER FIRE at 10700 BLOCK OF N UNION CT, PORTLAND, OR [Portland
+        Fire #RP13000080963]</summary>\n\t\t\t<category label=\"VFIRE - VEHICLE OR
+        TRAILER FIRE\" term=\"VFIRE - VEHICLE OR TRAILER FIRE\"/>\n\t\t\t<published>2013-12-28T17:17:03.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.600833
+        -122.678533</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080963&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;VFIRE - VEHICLE OR TRAILER FIRE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;10700
+        BLOCK OF N UNION CT, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:32:36 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423053</id>\n\t\t\t<title>TRAFFIC
+        STOP at NB I205 FWY SO / SE MARKET ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:21:09.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at NB I205 FWY SO / SE MARKET ST, PORTLAND, OR [Portland Police #PP13000423053]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:16:45.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.508926
+        -122.565241</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423053&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NB
+        I205 FWY SO / SE MARKET ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:21:09 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048849</id>\n\t\t\t<title>PREMISE
+        CHECK at 22700 BLOCK OF NW REEDER RD, MULTNOMAH COUNTY, OR</title>\n\t\t\t<updated>2013-12-28T17:20:05.0-08:00</updated>\n\t\t\t<summary>PREMISE
+        CHECK at 22700 BLOCK OF NW REEDER RD, MULTNOMAH COUNTY, OR [Multnomah County
+        Sheriff #PM13000048849]</summary>\n\t\t\t<category label=\"PREMISE CHECK\"
+        term=\"PREMISE CHECK\"/>\n\t\t\t<published>2013-12-28T17:14:13.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.687820
+        -122.806031</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048849&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PREMISE CHECK&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;22700
+        BLOCK OF NW REEDER RD, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:20:05 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080962</id>\n\t\t\t<title>MED
+        - MEDICAL at 1800 BLOCK OF SE 135TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:39:44.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at 1800 BLOCK OF SE 135TH AVE, PORTLAND, OR [Portland Fire #RP13000080962]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T17:13:51.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.509922
+        -122.524540</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080962&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1800
+        BLOCK OF SE 135TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:39:44 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423051</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at NE 72ND AVE / NE KILLINGSWORTH ST</title>\n\t\t\t<updated>2013-12-28T17:15:30.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at NE 72ND AVE / NE KILLINGSWORTH ST [Portland Police #PP13000423051]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T17:13:49.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.562662
+        -122.588866</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423051&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        72ND AVE / NE KILLINGSWORTH ST&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:15:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072419</id>\n\t\t\t<title>TRAFFIC
+        STOP at W POWELL BLVD / W POWELL LOOP, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:14:33.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at W POWELL BLVD / W POWELL LOOP, GRESHAM, OR [Gresham Police #PG13000072419]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:11:22.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.490706
+        -122.467732</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072419&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;W
+        POWELL BLVD / W POWELL LOOP, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:14:33 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423049</id>\n\t\t\t<title>WELFARE
+        CHECK - COLD at 500 BLOCK OF SW WASHINGTON ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:39:35.0-08:00</updated>\n\t\t\t<summary>WELFARE
+        CHECK - COLD at 500 BLOCK OF SW WASHINGTON ST, PORTLAND, OR [Portland Police
+        #PP13000423049]</summary>\n\t\t\t<category label=\"WELFARE CHECK - COLD\"
+        term=\"WELFARE CHECK - COLD\"/>\n\t\t\t<published>2013-12-28T17:11:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.520230
+        -122.677391</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423049&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WELFARE CHECK - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;500
+        BLOCK OF SW WASHINGTON ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:39:35 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423047</id>\n\t\t\t<title>TRAFFIC
+        STOP at 4800 BLOCK OF SW BARBUR BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:20:22.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at 4800 BLOCK OF SW BARBUR BLVD, PORTLAND, OR [Portland Police #PP13000423047]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:10:09.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.488533
+        -122.682699</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423047&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;4800
+        BLOCK OF SW BARBUR BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:20:22 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048848</id>\n\t\t\t<title>PREMISE
+        CHECK at 20400 BLOCK OF NW SAUVIE ISLAND RD, MULTNOMAH COUNTY, OR</title>\n\t\t\t<updated>2013-12-28T17:12:51.0-08:00</updated>\n\t\t\t<summary>PREMISE
+        CHECK at 20400 BLOCK OF NW SAUVIE ISLAND RD, MULTNOMAH COUNTY, OR [Multnomah
+        County Sheriff #PM13000048848]</summary>\n\t\t\t<category label=\"PREMISE
+        CHECK\" term=\"PREMISE CHECK\"/>\n\t\t\t<published>2013-12-28T17:09:05.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.670425
+        -122.847780</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048848&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PREMISE CHECK&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;20400
+        BLOCK OF NW SAUVIE ISLAND RD, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:12:51 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072417</id>\n\t\t\t<title>WELFARE
+        CHECK - COLD at 200 BLOCK OF SE 188TH AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:28:25.0-08:00</updated>\n\t\t\t<summary>WELFARE
+        CHECK - COLD at 200 BLOCK OF SE 188TH AVE, GRESHAM, OR [Gresham Police #PG13000072417]</summary>\n\t\t\t<category
+        label=\"WELFARE CHECK - COLD\" term=\"WELFARE CHECK - COLD\"/>\n\t\t\t<published>2013-12-28T17:08:51.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.520689
+        -122.467620</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072417&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WELFARE CHECK - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;200
+        BLOCK OF SE 188TH AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:28:25 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423045</id>\n\t\t\t<title>TRAFFIC
+        STOP at SE 122ND AVE / SE DIVISION ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:12:30.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SE 122ND AVE / SE DIVISION ST, PORTLAND, OR [Portland Police #PP13000423045]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:08:05.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.504093
+        -122.537687</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423045&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        122ND AVE / SE DIVISION ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:12:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423020</id>\n\t\t\t<title>THREAT
+        - COLD at 2100 BLOCK OF SE 113TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:22:56.0-08:00</updated>\n\t\t\t<summary>THREAT
+        - COLD at 2100 BLOCK OF SE 113TH AVE, PORTLAND, OR [Portland Police #PP13000423020]</summary>\n\t\t\t<category
+        label=\"THREAT - COLD\" term=\"THREAT - COLD\"/>\n\t\t\t<published>2013-12-28T17:08:04.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.507298
+        -122.546262</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423020&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;THREAT - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2100
+        BLOCK OF SE 113TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:22:56 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423044</id>\n\t\t\t<title>UNDESCRIBED
+        INCIDENT at 9600 BLOCK OF N COLUMBIA BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:17:43.0-08:00</updated>\n\t\t\t<summary>UNDESCRIBED
+        INCIDENT at 9600 BLOCK OF N COLUMBIA BLVD, PORTLAND, OR [Portland Police #PP13000423044]</summary>\n\t\t\t<category
+        label=\"UNDESCRIBED INCIDENT\" term=\"UNDESCRIBED INCIDENT\"/>\n\t\t\t<published>2013-12-28T17:07:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.609671
+        -122.759721</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423044&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNDESCRIBED INCIDENT&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;9600
+        BLOCK OF N COLUMBIA BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:17:43 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423043</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at SE 82ND AVE / SE KELLY ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:11:49.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at SE 82ND AVE / SE KELLY ST, PORTLAND, OR [Portland Police #PP13000423043]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T17:06:46.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.499168
+        -122.578709</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423043&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        82ND AVE / SE KELLY ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:11:49 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048847</id>\n\t\t\t<title>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at 5100 BLOCK OF SE 302ND AVE, MULTNOMAH COUNTY,
+        OR</title>\n\t\t\t<updated>2013-12-28T17:08:55.0-08:00</updated>\n\t\t\t<summary>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at 5100 BLOCK OF SE 302ND AVE, MULTNOMAH COUNTY,
+        OR [Multnomah County Sheriff #PM13000048847]</summary>\n\t\t\t<category label=\"SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE\" term=\"SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE\"/>\n\t\t\t<published>2013-12-28T17:05:32.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.484792
+        -122.354894</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048847&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;5100
+        BLOCK OF SE 302ND AVE, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:08:55 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072415</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 800 BLOCK OF SE 187TH AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:22:03.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 800 BLOCK OF SE 187TH AVE, GRESHAM, OR [Gresham Police #PG13000072415]</summary>\n\t\t\t<category
+        label=\"DISTURBANCE - PRIORITY\" term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T17:03:24.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.516613
+        -122.469941</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072415&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;800
+        BLOCK OF SE 187TH AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:22:03 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072416</id>\n\t\t\t<title>TRAFFIC
+        STOP at SE STARK ST / SE 181ST AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:10:33.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SE STARK ST / SE 181ST AVE, GRESHAM, OR [Gresham Police #PG13000072416]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:03:05.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519156
+        -122.477136</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072416&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        STARK ST / SE 181ST AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:10:33 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423039</id>\n\t\t\t<title>THEFT
+        - COLD at 12200 BLOCK OF NE GLISAN ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:31:20.0-08:00</updated>\n\t\t\t<summary>THEFT
+        - COLD at 12200 BLOCK OF NE GLISAN ST, PORTLAND, OR [Portland Police #PP13000423039]</summary>\n\t\t\t<category
+        label=\"THEFT - COLD\" term=\"THEFT - COLD\"/>\n\t\t\t<published>2013-12-28T17:02:25.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.525835
+        -122.536926</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423039&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;THEFT - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12200
+        BLOCK OF NE GLISAN ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:31:20 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423041</id>\n\t\t\t<title>TRAFFIC
+        STOP at SW TAYLOR ST / SW 3RD AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:21:29.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SW TAYLOR ST / SW 3RD AVE, PORTLAND, OR [Portland Police #PP13000423041]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:02:20.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.516918
+        -122.676261</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423041&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SW
+        TAYLOR ST / SW 3RD AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:21:29 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423040</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at SE 82ND AVE / SE RHONE ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:03:45.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at SE 82ND AVE / SE RHONE ST, PORTLAND, OR [Portland Police #PP13000423040]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T17:01:39.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.495494
+        -122.578750</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423040&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        82ND AVE / SE RHONE ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:03:45 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423038</id>\n\t\t\t<title>TRAFFIC
+        STOP at 4800 BLOCK OF SW BARBUR BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:05:24.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at 4800 BLOCK OF SW BARBUR BLVD, PORTLAND, OR [Portland Police #PP13000423038]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T17:00:39.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.488533
+        -122.682699</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423038&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;4800
+        BLOCK OF SW BARBUR BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:05:24 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PT13000011300</id>\n\t\t\t<title>UNWANTED
+        PERSON at 1300 BLOCK OF SE 24TH CIR, TROUTDALE, OR</title>\n\t\t\t<updated>2013-12-28T17:18:28.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 1300 BLOCK OF SE 24TH CIR, TROUTDALE, OR [Troutdale Police #PT13000011300]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T17:00:39.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.523719
+        -122.376518</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PT13000011300&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1300
+        BLOCK OF SE 24TH CIR, TROUTDALE, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Troutdale
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:18:28 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423036</id>\n\t\t\t<title>WELFARE
+        CHECK - PRIORITY at 2200 BLOCK OF NW GLISAN ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:12:07.0-08:00</updated>\n\t\t\t<summary>WELFARE
+        CHECK - PRIORITY at 2200 BLOCK OF NW GLISAN ST, PORTLAND, OR [Portland Police
+        #PP13000423036]</summary>\n\t\t\t<category label=\"WELFARE CHECK - PRIORITY\"
+        term=\"WELFARE CHECK - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:59:22.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.526385
+        -122.698105</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423036&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WELFARE CHECK - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2200
+        BLOCK OF NW GLISAN ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:12:07 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072414</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 4800 BLOCK OF SW 11TH ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:08:51.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 4800 BLOCK OF SW 11TH ST, GRESHAM, OR [Gresham Police #PG13000072414]</summary>\n\t\t\t<category
+        label=\"DISTURBANCE - PRIORITY\" term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:56:40.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.489321
+        -122.480142</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072414&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;4800
+        BLOCK OF SW 11TH ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:08:51 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423033</id>\n\t\t\t<title>HAZARD
+        - HAZARDOUS CONDITION at NB I205 BRG AT / MIDSPAN, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:16:47.0-08:00</updated>\n\t\t\t<summary>HAZARD
+        - HAZARDOUS CONDITION at NB I205 BRG AT / MIDSPAN, PORTLAND, OR [Portland
+        Police #PP13000423033]</summary>\n\t\t\t<category label=\"HAZARD - HAZARDOUS
+        CONDITION\" term=\"HAZARD - HAZARDOUS CONDITION\"/>\n\t\t\t<published>2013-12-28T16:56:21.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.582772
+        -122.543518</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423033&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HAZARD - HAZARDOUS CONDITION&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NB
+        I205 BRG AT / MIDSPAN, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:16:47 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422981</id>\n\t\t\t<title>VICE-DRUGS,
+        LIQUOR, PROSTITUTION, GAMBLING at 2700 BLOCK OF NE 82ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:12:49.0-08:00</updated>\n\t\t\t<summary>VICE-DRUGS,
+        LIQUOR, PROSTITUTION, GAMBLING at 2700 BLOCK OF NE 82ND AVE, PORTLAND, OR
+        [Portland Police #PP13000422981]</summary>\n\t\t\t<category label=\"VICE-DRUGS,
+        LIQUOR, PROSTITUTION, GAMBLING\" term=\"VICE-DRUGS, LIQUOR, PROSTITUTION,
+        GAMBLING\"/>\n\t\t\t<published>2013-12-28T16:56:18.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.540018
+        -122.580197</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422981&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;VICE-DRUGS, LIQUOR, PROSTITUTION,
+        GAMBLING&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2700
+        BLOCK OF NE 82ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:12:49 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423031</id>\n\t\t\t<title>FOLLOW-UP
+        at 9900 BLOCK OF SE WASHINGTON ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:06:35.0-08:00</updated>\n\t\t\t<summary>FOLLOW-UP
+        at 9900 BLOCK OF SE WASHINGTON ST, PORTLAND, OR [Portland Police #PP13000423031]</summary>\n\t\t\t<category
+        label=\"FOLLOW-UP\" term=\"FOLLOW-UP\"/>\n\t\t\t<published>2013-12-28T16:54:54.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.516395
+        -122.559956</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423031&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;FOLLOW-UP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;9900
+        BLOCK OF SE WASHINGTON ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:06:35 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423030</id>\n\t\t\t<title>TRAFFIC
+        STOP at E BURNSIDE ST / SE 41ST AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:59:59.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at E BURNSIDE ST / SE 41ST AVE, PORTLAND, OR [Portland Police #PP13000423030]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:53:17.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.523043
+        -122.619995</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423030&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;E
+        BURNSIDE ST / SE 41ST AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:59:59 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423029</id>\n\t\t\t<title>UNWANTED
+        PERSON at 9100 BLOCK OF SE POWELL BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:59:15.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 9100 BLOCK OF SE POWELL BLVD, PORTLAND, OR [Portland Police #PP13000423029]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T16:53:08.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.496915
+        -122.570223</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423029&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;9100
+        BLOCK OF SE POWELL BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:59:15 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072410</id>\n\t\t\t<title>WELFARE
+        CHECK - COLD at 3900 BLOCK OF W POWELL BLVD, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:07:58.0-08:00</updated>\n\t\t\t<summary>WELFARE
+        CHECK - COLD at 3900 BLOCK OF W POWELL BLVD, GRESHAM, OR [Gresham Police #PG13000072410]</summary>\n\t\t\t<category
+        label=\"WELFARE CHECK - COLD\" term=\"WELFARE CHECK - COLD\"/>\n\t\t\t<published>2013-12-28T16:52:58.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.488887
+        -122.472849</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072410&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WELFARE CHECK - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;3900
+        BLOCK OF W POWELL BLVD, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:07:58 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072413</id>\n\t\t\t<title>TRAFFIC
+        STOP at SE 202ND AVE / SE STARK ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:59:42.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SE 202ND AVE / SE STARK ST, GRESHAM, OR [Gresham Police #PG13000072413]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:52:10.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519145
+        -122.455191</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072413&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        202ND AVE / SE STARK ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:59:42 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423017</id>\n\t\t\t<title>DETOX
+        TRANSPORT at 0 N CENTER COURT ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:54:47.0-08:00</updated>\n\t\t\t<summary>DETOX
+        TRANSPORT at 0 N CENTER COURT ST, PORTLAND, OR [Portland Police #PP13000423017]</summary>\n\t\t\t<category
+        label=\"DETOX TRANSPORT\" term=\"DETOX TRANSPORT\"/>\n\t\t\t<published>2013-12-28T16:52:04.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.532571
+        -122.667836</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423017&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DETOX TRANSPORT&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;0
+        N CENTER COURT ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:54:47 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423026</id>\n\t\t\t<title>UNWANTED
+        PERSON at 1600 BLOCK OF NE GRAND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:58:54.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 1600 BLOCK OF NE GRAND AVE, PORTLAND, OR [Portland Police #PP13000423026]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T16:52:04.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.534697
+        -122.660117</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423026&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1600
+        BLOCK OF NE GRAND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:58:54 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423027</id>\n\t\t\t<title>WARRANT
+        at NW 6TH AVE / NW IRVING ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:49:05.0-08:00</updated>\n\t\t\t<summary>WARRANT
+        at NW 6TH AVE / NW IRVING ST, PORTLAND, OR [Portland Police #PP13000423027]</summary>\n\t\t\t<category
+        label=\"WARRANT\" term=\"WARRANT\"/>\n\t\t\t<published>2013-12-28T16:51:17.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.528051
+        -122.676610</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423027&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WARRANT&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NW
+        6TH AVE / NW IRVING ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:49:05 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048844</id>\n\t\t\t<title>HAZARD
+        - HAZARDOUS CONDITION at HWY 30 AT / SAUVIE ISLAND BRG, MULTNOMAH COUNTY,
+        OR</title>\n\t\t\t<updated>2013-12-28T17:00:06.0-08:00</updated>\n\t\t\t<summary>HAZARD
+        - HAZARDOUS CONDITION at HWY 30 AT / SAUVIE ISLAND BRG, MULTNOMAH COUNTY,
+        OR [Multnomah County Sheriff #PM13000048844]</summary>\n\t\t\t<category label=\"HAZARD
+        - HAZARDOUS CONDITION\" term=\"HAZARD - HAZARDOUS CONDITION\"/>\n\t\t\t<published>2013-12-28T16:50:50.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.626521
+        -122.818451</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048844&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HAZARD - HAZARDOUS CONDITION&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HWY
+        30 AT / SAUVIE ISLAND BRG, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:00:06 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423025</id>\n\t\t\t<title>TRAFFIC
+        STOP at E BURNSIDE ST / SE 83RD AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:52:48.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at E BURNSIDE ST / SE 83RD AVE, PORTLAND, OR [Portland Police #PP13000423025]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:50:38.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.522772
+        -122.578039</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423025&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;E
+        BURNSIDE ST / SE 83RD AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:52:48 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080959</id>\n\t\t\t<title>MED
+        - MEDICAL at 17100 BLOCK OF SE POWELL BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:17:22.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at 17100 BLOCK OF SE POWELL BLVD, PORTLAND, OR [Portland Fire #RP13000080959]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T16:50:34.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.491756
+        -122.487525</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080959&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;17100
+        BLOCK OF SE POWELL BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:17:22 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423024</id>\n\t\t\t<title>TRAFFIC
+        STOP at SE 85TH AVE / SE HOLGATE BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:57:23.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SE 85TH AVE / SE HOLGATE BLVD, PORTLAND, OR [Portland Police #PP13000423024]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:50:19.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.490235
+        -122.575800</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423024&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        85TH AVE / SE HOLGATE BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:57:23 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423022</id>\n\t\t\t<title>THEFT
+        - PRIORITY at SE RAYMOND ST / SE 104TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:15:22.0-08:00</updated>\n\t\t\t<summary>THEFT
+        - PRIORITY at SE RAYMOND ST / SE 104TH AVE, PORTLAND, OR [Portland Police
+        #PP13000423022]</summary>\n\t\t\t<category label=\"THEFT - PRIORITY\" term=\"THEFT
+        - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:49:33.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.485768
+        -122.555736</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423022&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;THEFT - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        RAYMOND ST / SE 104TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:15:22 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423016</id>\n\t\t\t<title>
+        at 17100 BLOCK OF SE POWELL BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:27:28.0-08:00</updated>\n\t\t\t<summary>
+        at 17100 BLOCK OF SE POWELL BLVD, PORTLAND, OR [Portland Police #PP13000423016]</summary>\n\t\t\t<category
+        label=\"\" term=\"\"/>\n\t\t\t<published>2013-12-28T16:47:32.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.491756
+        -122.487525</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423016&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;17100
+        BLOCK OF SE POWELL BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:27:28 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423019</id>\n\t\t\t<title>WELFARE
+        CHECK - PRIORITY at NE MULTNOMAH ST / NE WHEELER AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:31:59.0-08:00</updated>\n\t\t\t<summary>WELFARE
+        CHECK - PRIORITY at NE MULTNOMAH ST / NE WHEELER AVE, PORTLAND, OR [Portland
+        Police #PP13000423019]</summary>\n\t\t\t<category label=\"WELFARE CHECK -
+        PRIORITY\" term=\"WELFARE CHECK - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:47:15.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.530799
+        -122.665785</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423019&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WELFARE CHECK - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        MULTNOMAH ST / NE WHEELER AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:31:59 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423021</id>\n\t\t\t<title>TRAFFIC
+        STOP at SE STARK ST / SE 82ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:50:03.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at SE STARK ST / SE 82ND AVE, PORTLAND, OR [Portland Police #PP13000423021]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:47:11.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519129
+        -122.579069</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423021&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        STARK ST / SE 82ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:50:03 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072412</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 19400 BLOCK OF E BURNSIDE ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:57:40.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 19400 BLOCK OF E BURNSIDE ST, GRESHAM, OR [Gresham Police #PG13000072412]</summary>\n\t\t\t<category
+        label=\"DISTURBANCE - PRIORITY\" term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:47:07.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.517715
+        -122.463115</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072412&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;19400
+        BLOCK OF E BURNSIDE ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:57:40 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423018</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 6400 BLOCK OF NE KILLINGSWORTH ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:10:41.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 6400 BLOCK OF NE KILLINGSWORTH ST, PORTLAND, OR [Portland Police
+        #PP13000423018]</summary>\n\t\t\t<category label=\"DISTURBANCE - PRIORITY\"
+        term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:46:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.563689
+        -122.597579</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423018&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;6400
+        BLOCK OF NE KILLINGSWORTH ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:10:41 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422967</id>\n\t\t\t<title>CIVIL
+        - CIVIL PROBLEM at 1900 BLOCK OF SE 138TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:53:29.0-08:00</updated>\n\t\t\t<summary>CIVIL
+        - CIVIL PROBLEM at 1900 BLOCK OF SE 138TH AVE, PORTLAND, OR [Portland Police
+        #PP13000422967]</summary>\n\t\t\t<category label=\"CIVIL - CIVIL PROBLEM\"
+        term=\"CIVIL - CIVIL PROBLEM\"/>\n\t\t\t<published>2013-12-28T16:46:15.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.508856
+        -122.521985</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422967&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;CIVIL - CIVIL PROBLEM&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1900
+        BLOCK OF SE 138TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:53:29 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423001</id>\n\t\t\t<title>THEFT
+        - COLD at 11100 BLOCK OF NE THOMPSON ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:01:37.0-08:00</updated>\n\t\t\t<summary>THEFT
+        - COLD at 11100 BLOCK OF NE THOMPSON ST, PORTLAND, OR [Portland Police #PP13000423001]</summary>\n\t\t\t<category
+        label=\"THEFT - COLD\" term=\"THEFT - COLD\"/>\n\t\t\t<published>2013-12-28T16:42:38.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.538263
+        -122.548202</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423001&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;THEFT - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;11100
+        BLOCK OF NE THOMPSON ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:01:37 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423014</id>\n\t\t\t<title>THEFT
+        - PRIORITY at 8300 BLOCK OF N IVANHOE ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:58:26.0-08:00</updated>\n\t\t\t<summary>THEFT
+        - PRIORITY at 8300 BLOCK OF N IVANHOE ST, PORTLAND, OR [Portland Police #PP13000423014]</summary>\n\t\t\t<category
+        label=\"THEFT - PRIORITY\" term=\"THEFT - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:42:17.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.588759
+        -122.752897</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423014&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;THEFT - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;8300
+        BLOCK OF N IVANHOE ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:58:26 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080958</id>\n\t\t\t<title>MED
+        - MEDICAL at 1000 BLOCK OF NE DEAN ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:57:43.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at 1000 BLOCK OF NE DEAN ST, PORTLAND, OR [Portland Fire #RP13000080958]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T16:42:12.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.570837
+        -122.654223</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080958&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1000
+        BLOCK OF NE DEAN ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:57:43 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PM13000048843</id>\n\t\t\t<title>PREMISE
+        CHECK at 32200 BLOCK OF SE PIPELINE RD, MULTNOMAH COUNTY, OR</title>\n\t\t\t<updated>2013-12-28T16:47:41.0-08:00</updated>\n\t\t\t<summary>PREMISE
+        CHECK at 32200 BLOCK OF SE PIPELINE RD, MULTNOMAH COUNTY, OR [Multnomah County
+        Sheriff #PM13000048843]</summary>\n\t\t\t<category label=\"PREMISE CHECK\"
+        term=\"PREMISE CHECK\"/>\n\t\t\t<published>2013-12-28T16:41:39.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.483623
+        -122.330488</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PM13000048843&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PREMISE CHECK&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;32200
+        BLOCK OF SE PIPELINE RD, MULTNOMAH COUNTY, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Multnomah
+        County Sheriff&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:47:41 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072409</id>\n\t\t\t<title>WARRANT
+        at 100 BLOCK OF NE KANE DR, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:52:12.0-08:00</updated>\n\t\t\t<summary>WARRANT
+        at 100 BLOCK OF NE KANE DR, GRESHAM, OR [Gresham Police #PG13000072409]</summary>\n\t\t\t<category
+        label=\"WARRANT\" term=\"WARRANT\"/>\n\t\t\t<published>2013-12-28T16:41:38.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.498854
+        -122.399420</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072409&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;WARRANT&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;100
+        BLOCK OF NE KANE DR, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:52:12 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423012</id>\n\t\t\t<title>TRIMET
+        INCIDENT - COLD at NE BROADWAY / NE 24TH AVE</title>\n\t\t\t<updated>2013-12-28T16:41:49.0-08:00</updated>\n\t\t\t<summary>TRIMET
+        INCIDENT - COLD at NE BROADWAY / NE 24TH AVE [Portland Police #PP13000423012]</summary>\n\t\t\t<category
+        label=\"TRIMET INCIDENT - COLD\" term=\"TRIMET INCIDENT - COLD\"/>\n\t\t\t<published>2013-12-28T16:40:32.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.535087
+        -122.641163</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423012&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRIMET INCIDENT - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        BROADWAY / NE 24TH AVE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:41:49 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423013</id>\n\t\t\t<title>HAZARD
+        - HAZARDOUS CONDITION at SE 82ND AVE / SE DIVISION ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:43:28.0-08:00</updated>\n\t\t\t<summary>HAZARD
+        - HAZARDOUS CONDITION at SE 82ND AVE / SE DIVISION ST, PORTLAND, OR [Portland
+        Police #PP13000423013]</summary>\n\t\t\t<category label=\"HAZARD - HAZARDOUS
+        CONDITION\" term=\"HAZARD - HAZARDOUS CONDITION\"/>\n\t\t\t<published>2013-12-28T16:40:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.504820
+        -122.578682</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423013&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;HAZARD - HAZARDOUS CONDITION&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        82ND AVE / SE DIVISION ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:43:28 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422978</id>\n\t\t\t<title>FOLLOW-UP
+        at 2800 BLOCK OF SE HAWTHORNE BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:55:13.0-08:00</updated>\n\t\t\t<summary>FOLLOW-UP
+        at 2800 BLOCK OF SE HAWTHORNE BLVD, PORTLAND, OR [Portland Police #PP13000422978]</summary>\n\t\t\t<category
+        label=\"FOLLOW-UP\" term=\"FOLLOW-UP\"/>\n\t\t\t<published>2013-12-28T16:39:53.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.511624
+        -122.637328</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422978&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;FOLLOW-UP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2800
+        BLOCK OF SE HAWTHORNE BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:55:13 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423011</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at 1300 BLOCK OF SE EASTBANK ESPLANADE , PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:11:33.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at 1300 BLOCK OF SE EASTBANK ESPLANADE , PORTLAND, OR [Portland
+        Police #PP13000423011]</summary>\n\t\t\t<category label=\"PERSON CONTACT (86)\"
+        term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T16:39:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.513328
+        -122.668089</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423011&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1300
+        BLOCK OF SE EASTBANK ESPLANADE , PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:11:33 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072400</id>\n\t\t\t<title>MISSING
+        - PERSON LOST,FOUND,RUNNER at 300 BLOCK OF NE 197TH AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T17:08:13.0-08:00</updated>\n\t\t\t<summary>MISSING
+        - PERSON LOST,FOUND,RUNNER at 300 BLOCK OF NE 197TH AVE, GRESHAM, OR [Gresham
+        Police #PG13000072400]</summary>\n\t\t\t<category label=\"MISSING - PERSON
+        LOST,FOUND,RUNNER\" term=\"MISSING - PERSON LOST,FOUND,RUNNER\"/>\n\t\t\t<published>2013-12-28T16:38:27.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.525362
+        -122.459870</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072400&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MISSING - PERSON LOST,FOUND,RUNNER&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;300
+        BLOCK OF NE 197TH AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:08:13 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080957</id>\n\t\t\t<title>TA1
+        - TRAFFIC ACCIDENT - 1ST RESPONSE (FIRE &amp; EMS) at NW 21ST AVE / NW IRVING
+        ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:16:44.0-08:00</updated>\n\t\t\t<summary>TA1
+        - TRAFFIC ACCIDENT - 1ST RESPONSE (FIRE &amp; EMS) at NW 21ST AVE / NW IRVING
+        ST, PORTLAND, OR [Portland Fire #RP13000080957]</summary>\n\t\t\t<category
+        label=\"TA1 - TRAFFIC ACCIDENT - 1ST RESPONSE (FIRE &amp; EMS)\" term=\"TA1
+        - TRAFFIC ACCIDENT - 1ST RESPONSE (FIRE &amp; EMS)\"/>\n\t\t\t<published>2013-12-28T16:38:05.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.527725
+        -122.694476</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080957&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TA1 - TRAFFIC ACCIDENT - 1ST RESPONSE
+        (FIRE &amp; EMS)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NW
+        21ST AVE / NW IRVING ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:16:44 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423007</id>\n\t\t\t<title>UNWANTED
+        PERSON at 100 BLOCK OF SE SPOKANE ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:54:16.0-08:00</updated>\n\t\t\t<summary>UNWANTED
+        PERSON at 100 BLOCK OF SE SPOKANE ST, PORTLAND, OR [Portland Police #PP13000423007]</summary>\n\t\t\t<category
+        label=\"UNWANTED PERSON\" term=\"UNWANTED PERSON\"/>\n\t\t\t<published>2013-12-28T16:37:56.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.464662
+        -122.662883</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423007&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;UNWANTED PERSON&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;100
+        BLOCK OF SE SPOKANE ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:54:16 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423008</id>\n\t\t\t<title>TRAFFIC
+        STOP at I205 FWY / SE POWELL BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:45:00.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at I205 FWY / SE POWELL BLVD, PORTLAND, OR [Portland Police #PP13000423008]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:37:41.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.497331
+        -122.565241</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423008&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;I205
+        FWY / SE POWELL BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:45:00 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423005</id>\n\t\t\t<title>ACCIDENT
+        - UNKNOWN INJURY at NW 21ST AVE / NW IRVING ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:09:58.0-08:00</updated>\n\t\t\t<summary>ACCIDENT
+        - UNKNOWN INJURY at NW 21ST AVE / NW IRVING ST, PORTLAND, OR [Portland Police
+        #PP13000423005]</summary>\n\t\t\t<category label=\"ACCIDENT - UNKNOWN INJURY\"
+        term=\"ACCIDENT - UNKNOWN INJURY\"/>\n\t\t\t<published>2013-12-28T16:35:18.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.527725
+        -122.694476</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423005&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;ACCIDENT - UNKNOWN INJURY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NW
+        21ST AVE / NW IRVING ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:09:58 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072407</id>\n\t\t\t<title>TRAFFIC
+        STOP at NE EVERETT ST / NE 181ST AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:46:49.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at NE EVERETT ST / NE 181ST AVE, GRESHAM, OR [Gresham Police #PG13000072407]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:34:52.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.525004
+        -122.477074</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072407&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        EVERETT ST / NE 181ST AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:46:49 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423003</id>\n\t\t\t<title>FLAGDOWN
+        at SE 96TH AVE / SE MAIN ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:37:45.0-08:00</updated>\n\t\t\t<summary>FLAGDOWN
+        at SE 96TH AVE / SE MAIN ST, PORTLAND, OR [Portland Police #PP13000423003]</summary>\n\t\t\t<category
+        label=\"FLAGDOWN\" term=\"FLAGDOWN\"/>\n\t\t\t<published>2013-12-28T16:32:32.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.514023
+        -122.564221</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423003&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;FLAGDOWN&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        96TH AVE / SE MAIN ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:37:45 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072406</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at NE 13TH ST / NE KANE DR, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:37:38.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at NE 13TH ST / NE KANE DR, GRESHAM, OR [Gresham Police #PG13000072406]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T16:30:33.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.506596
+        -122.399963</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072406&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        13TH ST / NE KANE DR, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:37:38 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422954</id>\n\t\t\t<title>BURGLARY
+        - COLD at 6200 BLOCK OF SE 82ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:49:50.0-08:00</updated>\n\t\t\t<summary>BURGLARY
+        - COLD at 6200 BLOCK OF SE 82ND AVE, PORTLAND, OR [Portland Police #PP13000422954]</summary>\n\t\t\t<category
+        label=\"BURGLARY - COLD\" term=\"BURGLARY - COLD\"/>\n\t\t\t<published>2013-12-28T16:30:22.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.477954
+        -122.579372</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422954&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;BURGLARY - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;6200
+        BLOCK OF SE 82ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:49:50 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000423000</id>\n\t\t\t<title>TRIMET
+        INCIDENT - PRIORITY at 200 BLOCK OF NW 1ST AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:41:26.0-08:00</updated>\n\t\t\t<summary>TRIMET
+        INCIDENT - PRIORITY at 200 BLOCK OF NW 1ST AVE, PORTLAND, OR [Portland Police
+        #PP13000423000]</summary>\n\t\t\t<category label=\"TRIMET INCIDENT - PRIORITY\"
+        term=\"TRIMET INCIDENT - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:30:14.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.524937
+        -122.671377</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000423000&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRIMET INCIDENT - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;200
+        BLOCK OF NW 1ST AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:41:26 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080955</id>\n\t\t\t<title>MED
+        - MEDICAL at 500 BLOCK OF SE GRAND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:01:39.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at 500 BLOCK OF SE GRAND AVE, PORTLAND, OR [Portland Fire #RP13000080955]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T16:29:45.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.518938
+        -122.660404</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080955&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;500
+        BLOCK OF SE GRAND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:01:39 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422999</id>\n\t\t\t<title>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at SW WASHINGTON ST / SW 3RD AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:29:24.0-08:00</updated>\n\t\t\t<summary>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at SW WASHINGTON ST / SW 3RD AVE, PORTLAND, OR
+        [Portland Police #PP13000422999]</summary>\n\t\t\t<category label=\"SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE\" term=\"SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE\"/>\n\t\t\t<published>2013-12-28T16:29:16.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519585
+        -122.674818</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422999&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SW
+        WASHINGTON ST / SW 3RD AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:29:24 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072404</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 3000 BLOCK OF SE OSPREY AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:58:48.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 3000 BLOCK OF SE OSPREY AVE, GRESHAM, OR [Gresham Police #PG13000072404]</summary>\n\t\t\t<category
+        label=\"DISTURBANCE - PRIORITY\" term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:28:26.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.474984
+        -122.372328</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072404&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;3000
+        BLOCK OF SE OSPREY AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:58:48 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422997</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at E BURNSIDE ST / SE STARK ST, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:38:30.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at E BURNSIDE ST / SE STARK ST, GRESHAM, OR [Portland Police
+        #PP13000422997]</summary>\n\t\t\t<category label=\"PERSON CONTACT (86)\" term=\"PERSON
+        CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T16:26:10.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.519156
+        -122.467270</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422997&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;E
+        BURNSIDE ST / SE STARK ST, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:38:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422991</id>\n\t\t\t<title>FRAUD
+        - COLD at 3500 BLOCK OF SE 122ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:51:11.0-08:00</updated>\n\t\t\t<summary>FRAUD
+        - COLD at 3500 BLOCK OF SE 122ND AVE, PORTLAND, OR [Portland Police #PP13000422991]</summary>\n\t\t\t<category
+        label=\"FRAUD - COLD\" term=\"FRAUD - COLD\"/>\n\t\t\t<published>2013-12-28T16:25:54.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.496684
+        -122.537605</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422991&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;FRAUD - COLD&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;3500
+        BLOCK OF SE 122ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:51:11 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422995</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 300 BLOCK OF NW GLISAN ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:34:19.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 300 BLOCK OF NW GLISAN ST, PORTLAND, OR [Portland Police #PP13000422995]</summary>\n\t\t\t<category
+        label=\"DISTURBANCE - PRIORITY\" term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:25:33.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.526455
+        -122.673828</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422995&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;300
+        BLOCK OF NW GLISAN ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:34:19 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422990</id>\n\t\t\t<title>
+        at 1100 BLOCK OF NE 102ND AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:34:49.0-08:00</updated>\n\t\t\t<summary>
+        at 1100 BLOCK OF NE 102ND AVE, PORTLAND, OR [Portland Police #PP13000422990]</summary>\n\t\t\t<category
+        label=\"\" term=\"\"/>\n\t\t\t<published>2013-12-28T16:25:31.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.530491
+        -122.560166</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422990&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;1100
+        BLOCK OF NE 102ND AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:34:49 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422994</id>\n\t\t\t<title>FOLLOW-UP
+        at SE 129TH AVE / SE DIVISION ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:29:37.0-08:00</updated>\n\t\t\t<summary>FOLLOW-UP
+        at SE 129TH AVE / SE DIVISION ST, PORTLAND, OR [Portland Police #PP13000422994]</summary>\n\t\t\t<category
+        label=\"FOLLOW-UP\" term=\"FOLLOW-UP\"/>\n\t\t\t<published>2013-12-28T16:23:45.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.504067
+        -122.531233</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422994&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;FOLLOW-UP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SE
+        129TH AVE / SE DIVISION ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:29:37 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422992</id>\n\t\t\t<title>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at NW 14TH AVE / NW RALEIGH ST, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:50:16.0-08:00</updated>\n\t\t\t<summary>SUSPICIOUS
+        SUBJ, VEH, OR CIRCUMSTANCE at NW 14TH AVE / NW RALEIGH ST, PORTLAND, OR [Portland
+        Police #PP13000422992]</summary>\n\t\t\t<category label=\"SUSPICIOUS SUBJ,
+        VEH, OR CIRCUMSTANCE\" term=\"SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE\"/>\n\t\t\t<published>2013-12-28T16:23:39.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.534306
+        -122.685583</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422992&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;SUSPICIOUS SUBJ, VEH, OR CIRCUMSTANCE&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NW
+        14TH AVE / NW RALEIGH ST, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:50:16 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422986</id>\n\t\t\t<title>PREMISE
+        CHECK at 2800 BLOCK OF NE 66TH AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:33:12.0-08:00</updated>\n\t\t\t<summary>PREMISE
+        CHECK at 2800 BLOCK OF NE 66TH AVE, PORTLAND, OR [Portland Police #PP13000422986]</summary>\n\t\t\t<category
+        label=\"PREMISE CHECK\" term=\"PREMISE CHECK\"/>\n\t\t\t<published>2013-12-28T16:19:19.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.543095
+        -122.595049</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422986&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PREMISE CHECK&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;2800
+        BLOCK OF NE 66TH AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:33:12 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072403</id>\n\t\t\t<title>TRAFFIC
+        STOP at 300 BLOCK OF NE 181ST AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:36:02.0-08:00</updated>\n\t\t\t<summary>TRAFFIC
+        STOP at 300 BLOCK OF NE 181ST AVE, GRESHAM, OR [Gresham Police #PG13000072403]</summary>\n\t\t\t<category
+        label=\"TRAFFIC STOP\" term=\"TRAFFIC STOP\"/>\n\t\t\t<published>2013-12-28T16:18:52.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.525305
+        -122.477611</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072403&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;TRAFFIC STOP&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;300
+        BLOCK OF NE 181ST AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:36:02 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072402</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at NE 13TH ST / NE KANE DR, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:30:30.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at NE 13TH ST / NE KANE DR, GRESHAM, OR [Gresham Police #PG13000072402]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T16:17:40.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.506596
+        -122.399963</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072402&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        13TH ST / NE KANE DR, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:30:30 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PP13000422984</id>\n\t\t\t<title>DISTURBANCE
+        - PRIORITY at 3000 BLOCK OF NE MARTIN LUTHER KING JR BLVD, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T16:26:23.0-08:00</updated>\n\t\t\t<summary>DISTURBANCE
+        - PRIORITY at 3000 BLOCK OF NE MARTIN LUTHER KING JR BLVD, PORTLAND, OR [Portland
+        Police #PP13000422984]</summary>\n\t\t\t<category label=\"DISTURBANCE - PRIORITY\"
+        term=\"DISTURBANCE - PRIORITY\"/>\n\t\t\t<published>2013-12-28T16:16:45.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.544983
+        -122.661559</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PP13000422984&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;DISTURBANCE - PRIORITY&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;3000
+        BLOCK OF NE MARTIN LUTHER KING JR BLVD, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:26:23 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080954</id>\n\t\t\t<title>MED
+        - MEDICAL at 3700 BLOCK OF NE MALLORY AVE, PORTLAND, OR</title>\n\t\t\t<updated>2013-12-28T17:12:08.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at 3700 BLOCK OF NE MALLORY AVE, PORTLAND, OR [Portland Fire #RP13000080954]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T16:16:13.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.549689
+        -122.663605</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080954&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;3700
+        BLOCK OF NE MALLORY AVE, PORTLAND, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        5:12:08 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/RP13000080953</id>\n\t\t\t<title>MED
+        - MEDICAL at NE 111TH AVE / NE SACRAMENTO ST</title>\n\t\t\t<updated>2013-12-28T16:31:29.0-08:00</updated>\n\t\t\t<summary>MED
+        - MEDICAL at NE 111TH AVE / NE SACRAMENTO ST [Portland Fire #RP13000080953]</summary>\n\t\t\t<category
+        label=\"MED - MEDICAL\" term=\"MED - MEDICAL\"/>\n\t\t\t<published>2013-12-28T16:15:28.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.539489
+        -122.549019</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;RP13000080953&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;MED - MEDICAL&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        111TH AVE / NE SACRAMENTO ST&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Portland
+        Fire&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:31:29 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n\t\t<entry>\n\t\t\t<id>tag:portlandoregon.gov,2013-12-28:cad-incidents/PG13000072399</id>\n\t\t\t<title>PERSON
+        CONTACT (86) at NE GLISAN ST / NE 181ST AVE, GRESHAM, OR</title>\n\t\t\t<updated>2013-12-28T16:17:19.0-08:00</updated>\n\t\t\t<summary>PERSON
+        CONTACT (86) at NE GLISAN ST / NE 181ST AVE, GRESHAM, OR [Gresham Police #PG13000072399]</summary>\n\t\t\t<category
+        label=\"PERSON CONTACT (86)\" term=\"PERSON CONTACT (86)\"/>\n\t\t\t<published>2013-12-28T16:15:07.0-08:00</published>\n\t\t\t\n\t\t\t<georss:point>45.526417
+        -122.477065</georss:point>\n\t\t\t\n\t\t\t<content type=\"html\">\n\t\t\t\t\t&lt;dl&gt;\n\t\t\t\t\t\t&lt;dt&gt;ID:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PG13000072399&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Call
+        Type:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;PERSON CONTACT (86)&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Address:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;NE
+        GLISAN ST / NE 181ST AVE, GRESHAM, OR&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Agency:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;Gresham
+        Police&lt;/dd&gt;\n\t\t\t\t\t\t&lt;dt&gt;Last Updated:&lt;/dt&gt;\n\t\t\t\t\t\t&lt;dd&gt;12/28/13
+        4:17:19 PM PST&lt;/dd&gt;\n\t\t\t\t\t&lt;/dl&gt;\n\t\t\t</content>\n\n\n\t\t</entry>\n\t\n</feed>"
+    http_version: 
+  recorded_at: Sun, 29 Dec 2013 01:51:15 GMT
+recorded_with: VCR 2.8.0

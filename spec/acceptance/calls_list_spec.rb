@@ -4,7 +4,7 @@ require './spec/spec_helper'
 describe 'homepage' do
 
   it 'converts XML in to a list of calls' do
-    Call.create_from_xml('spec/fixtures/call_data.cfm')
+    Call.import_from_xml_uri(File.open("spec/fixtures/call_data.cfm"))
 
     visit "/"
 
@@ -14,10 +14,6 @@ describe 'homepage' do
       ["TRAFFIC STOP",        "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"],
       ["WARRANT",             "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"],
     ]
-  end
-
-  it 'gets XML from a remote server' do
-
   end
 
   def calls
