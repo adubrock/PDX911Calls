@@ -2,7 +2,8 @@ require "rspec/autorun"
 require "./spec/spec_helper"
 
 describe Call do
-
+  
+  its(:call_id) {should be_nil }
   its(:call_type) { should be_nil }
   its(:address) { should be_nil }
   
@@ -22,6 +23,7 @@ describe Call do
       Call.count.should == 100
       Call.first.attributes.should include("call_type" => "UNDESCRIBED INCIDENT")
       Call.first.attributes.should include("address" => "2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR")
+      Call.first.attributes.should include("call_id" => "PG13000072425")
     end
   end
 end
