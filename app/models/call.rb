@@ -3,12 +3,13 @@ require 'open-uri'
 class Call < ActiveRecord::Base
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri))
-    
     doc.search('entry').each do |entry|
       call_id = parse_call_id(entry)
       call_type = parse_call_type(entry)
       address = parse_address(entry)
-      Call.create!(call_id: call_id, call_type: call_type, address: address)
+      unless exists?(call_id: call_id)
+        Call.create!(call_id: call_id, call_type: call_type, address: address)
+      end
     end
   end
 
