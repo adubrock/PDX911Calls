@@ -5,21 +5,37 @@ class Call < ActiveRecord::Base
     doc = Nokogiri::XML(open(uri))
     
     doc.search('entry').each do |entry|
-      
-      call_info = []
-      
-      entry.search('id').each do |id|
-        trash, call_id = id.text.split(/incidents\//)
-        call_info << call_id
-      end
-
-      entry.search('title').each do |title|
-        call_type, address = title.text.split(/ at /)
-        call_info << call_type
-        call_info << address
-      end
-
-      Call.create!(call_id: call_info[0], call_type: call_info[1], address: call_info[2])
+      call_id = parse_call_id(entry)
+      call_type = parse_call_type(entry)
+      address = parse_address(entry)
+      Call.create!(call_id: call_id, call_type: call_type, address: address)
     end
+  end
+
+  def self.parse_call_id(entry)
+    call_id = ""
+    entry.search('id').each do |id|
+      trash, data = id.text.split(/incidents\//)
+      call_id << data
+    end
+    call_id
+  end
+
+  def self.parse_call_type(entry)
+    call_type = ""
+    entry.search('title').each do |title|
+      data, trash = title.text.split(/ at /)
+      call_type << data
+    end
+    call_type
+  end
+
+  def self.parse_address(entry)
+    address = ""
+    entry.search('title').each do |title|
+      trash, data = title.text.split(/ at /)
+      address << data
+    end
+    address
   end
 end
