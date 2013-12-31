@@ -2,10 +2,9 @@ require 'rspec/autorun'
 require './spec/spec_helper'
 
 describe 'homepage' do
-  it 'should show a list of calls' do
-    Call.create! call_type: "PERSON CONTACT (86)", address: "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"
-    Call.create! call_type: "TRAFFIC STOP",        address: "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"
-    Call.create! call_type: "WARRANT",             address: "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"
+
+  it 'converts XML in to a list of calls' do
+    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
 
     visit "/"
 
@@ -18,9 +17,7 @@ describe 'homepage' do
   end
 
   it 'should have a map' do
-
     visit "/"
-
     page.should have_css('div.map')
   end
 
@@ -39,4 +36,3 @@ describe 'homepage' do
     end
   end
 end
-
