@@ -24,6 +24,13 @@ describe 'homepage' do
     page.should have_css('div.map')
   end
 
+  it 'should have a search function' do
+
+    visit "/"
+
+    page.should have_css('div.search')
+  end
+
   def calls
     all(".calls tr").map do |row|
       row.all("th,td").map do |cell|
