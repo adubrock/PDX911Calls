@@ -1,8 +1,8 @@
 require 'open-uri'
 
 class Call < ActiveRecord::Base
-  geocoded_by :address
-  after_validation :geocode
+#  geocoded_by :address
+#  after_validation :geocode
 
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri))

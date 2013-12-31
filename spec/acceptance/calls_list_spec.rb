@@ -16,10 +16,10 @@ describe 'homepage' do
     ]
   end
 
-  it 'should have a map' do
-    visit "/"
-    page.should have_css('div.map')
-  end
+#  it 'should have a map' do
+#    visit "/"
+#    page.should have_css('div.map')
+#  end
 
   def calls
     all(".calls tr").map do |row|
