@@ -1,5 +1,8 @@
 %h1 Listing Calls
 
+.map
+= render 'shared/map'
+
 %table.calls
   %tr
     %th Type
@@ -9,4 +12,3 @@
     %tr
       %td= call.call_type
       %td= call.address
-
