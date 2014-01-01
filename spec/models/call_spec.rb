@@ -3,16 +3,19 @@ require "./spec/spec_helper"
 
 describe Call do
   
+  its(:call_id) { should be_nil }
   its(:call_type) { should be_nil }
   its(:address) { should be_nil }
+  its(:agency) { should be_nil }
+  its(:call_last_updated) { should be_nil }
 
-  it "converts XML in to calls" do
+  it "converts XML into calls" do
     Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
-    call_attributes = Call.all.map { |call| call.attributes.values_at("call_type", "address") }
+    call_attributes = Call.all.map { |call| call.attributes.values_at("call_type", "address", "agency", "call_last_updated", "call_id") }
     call_attributes.should == [
-    ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"],
-    ["TRAFFIC STOP", "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR"],
-    ["WARRANT", "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"]
+    ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR", "Gresham Police", "12/17/13 4:01:53 AM PST", "PG13000069982"],
+    ["TRAFFIC STOP", "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR", "Portland Police", "12/17/13 3:56:31 AM PST", "PP13000411200"],
+    ["WARRANT", "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR", "Gresham Police", "12/17/13 3:56:16 AM PST", "PG13000069981"]
     ]
   end
 
