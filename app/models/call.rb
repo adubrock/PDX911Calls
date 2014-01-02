@@ -5,80 +5,56 @@ class Call < ActiveRecord::Base
  # after_validation :geocode
 
   def self.import_from_xml_uri(uri)
-    doc = Nokogiri::XML(open(uri))
+    doc = Nokogiri::XML(open(uri)).remove_namespaces!
     doc.search('entry').each do |entry|
-      call_id = parse_call_id(entry)
-      call_type = parse_call_type(entry)
-      address = parse_address(entry)
-      agency = parse_agency(entry)
-      call_last_updated = parse_call_last_updated(entry) 
-      latitude = parse_latitude(entry).to_f
+      call_id = XmlParser.parse_call_id(entry)
+      call_type = XmlParser.parse_call_type(entry)
+      address = XmlParser.parse_address(entry)
+      agency = XmlParser.parse_agency(entry)
+      call_last_updated = XmlParser.parse_call_last_updated(entry) 
+      latitude = XmlParser.parse_latitude(entry)
+      longitude = XmlParser.parse_longitude(entry)
       unless exists?(call_id: call_id)
         Call.create!(call_id: call_id, 
                      call_type: call_type,
                      address: address,
                      agency: agency,
                      call_last_updated: call_last_updated,
-                     latitude: latitude )
+                     latitude: latitude,
+                     longitude: longitude )
       end
     end
   end
 
-  def self.parse_call_id(entry)
-    call_id = ""
-    entry.search('id').each do |id|
-      trash, call_id = id.text.split(/incidents\//)
+  class XmlParser < Call
+    def self.parse_call_id(entry)
+      entry.at_css('id').text[/\w+$/]
     end
-    call_id
-  end
 
-  def self.parse_call_type(entry)
-    call_type = ""
-    entry.search('title').each do |title|
-      call_type, trash = title.text.split(/ at /)
+    def self.parse_call_type(entry)
+      entry.at_css('title').text.split(" at ").first
     end
-    call_type
-  end
 
-  def self.parse_address(entry)
-    address = ""
-    entry.search('title').each do |title|
-      trash, address = title.text.split(/ at /)
+    def self.parse_address(entry)
+      entry.at_css('title').text.split(" at ").last
     end
-    address
-  end
 
-  def self.parse_agency(entry)
-    agency = ""
-    entry.search('summary').each do |summary|
-      trash, data = summary.text.split(/\[/)
-      agency, trash = data.split(/ #/)
+    def self.parse_agency(entry)
+      entry.at_css('summary').text[/\[(.*?) \#/m, 1]
     end
-    agency
-  end
 
-  def self.parse_call_last_updated(entry)
-    call_last_updated = ""
-    entry.search('content').each do |content|
-      trash, data = content.to_s.split(/Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/)
-      call_last_updated, trash = data.split(/&lt;/)
+    def self.parse_call_last_updated(entry)
+      markerstring1 = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
+      markerstring2 = /&lt;/
+      entry.at_css('content').to_s[/#{markerstring1}(.*?)#{markerstring2}/m, 1]
     end
-    call_last_updated
-  end
 
-  def self.parse_latitude(entry)
-  latitude = ""
-    entry.search('updated').each do |coordinates|
-      latitude, data = coordinates.text.split(/\s/)
-
-
-      # latitude, data = coordinates.text.split(/\s/)
-
-    # entry.search('updated').each do |coordinates|
-    #   trash, latitude = coordinates.to_s.split(/-/)
-
-      #latitude, longitude = coordinates.to_f.split(/\s/)
+    def self.parse_latitude(entry)
+      entry.at_css('point').text.split(" ").first
     end
-    latitude
+
+    def self.parse_longitude(entry)
+      entry.at_css('point').text.split(" ").last
+    end
   end
 end

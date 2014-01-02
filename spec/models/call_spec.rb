@@ -8,6 +8,8 @@ describe Call do
   its(:address) { should be_nil }
   its(:agency) { should be_nil }
   its(:call_last_updated) { should be_nil }
+  its(:latitude) { should be_nil }
+  its(:longitude) { should be_nil }
 
   it "converts XML into calls" do
     Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
@@ -33,5 +35,11 @@ describe Call do
     Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
     Call.import_from_xml_uri(File.open("spec/fixtures/call_data_2.cfm"))
     Call.count.should == 4
+  end
+
+  it 'should pull the latitude and longitude' do
+    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.first.latitude.should == 45.525665
+    Call.first.longitude.should == -122.460767
   end
 end

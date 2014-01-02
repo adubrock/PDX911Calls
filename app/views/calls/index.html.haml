@@ -14,6 +14,7 @@
     %th Call Last Updated
     %th Call ID #
     %th Latitude
+    %th Longitude
 
   - @calls.each do |call|
     %tr
@@ -23,3 +24,4 @@
       %td= call.call_last_updated
       %td= call.call_id
       %td= call.latitude
+      %td= call.longitude
