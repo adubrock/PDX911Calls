@@ -25,36 +25,36 @@ class Call < ActiveRecord::Base
       end
     end
   end
-end
+  
+  class XmlParser
+    def self.parse_call_id(entry)
+      entry.at_css('id').text[/\w+$/]
+    end
 
-class XmlParser
-  def self.parse_call_id(entry)
-    entry.at_css('id').text[/\w+$/]
-  end
+    def self.parse_call_type(entry)
+      entry.at_css('title').text.split(" at ").first
+    end
 
-  def self.parse_call_type(entry)
-    entry.at_css('title').text.split(" at ").first
-  end
+    def self.parse_address(entry)
+      entry.at_css('title').text.split(" at ").last
+    end
 
-  def self.parse_address(entry)
-    entry.at_css('title').text.split(" at ").last
-  end
+    def self.parse_agency(entry)
+      entry.at_css('summary').text[/\[(.*?) \#/m, 1]
+    end
 
-  def self.parse_agency(entry)
-    entry.at_css('summary').text[/\[(.*?) \#/m, 1]
-  end
+    def self.parse_call_last_updated(entry)
+      start_string = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
+      end_string = /&lt;/
+      entry.at_css('content').to_s[/#{start_string}(.*?)#{end_string}/m, 1]
+    end
 
-  def self.parse_call_last_updated(entry)
-    start_string = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
-    end_string = /&lt;/
-    entry.at_css('content').to_s[/#{start_string}(.*?)#{end_string}/m, 1]
-  end
+    def self.parse_latitude(entry)
+      entry.at_css('point').text.split(" ").first
+    end
 
-  def self.parse_latitude(entry)
-    entry.at_css('point').text.split(" ").first
-  end
-
-  def self.parse_longitude(entry)
-    entry.at_css('point').text.split(" ").last
+    def self.parse_longitude(entry)
+      entry.at_css('point').text.split(" ").last
+    end
   end
 end
