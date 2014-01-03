@@ -4,7 +4,7 @@ require './spec/spec_helper'
 describe 'homepage' do
 
   it 'converts XML into a list of calls' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
 
     visit "/"
 

@@ -26,49 +26,49 @@ describe Call do
   end
 
   it 'should only create one instance per call_id' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_2.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
+    Call.import_from_xml_uri("spec/fixtures/call_data_2.cfm")
     Call.count.should == 4
   end
 
   it 'should pull the call_type' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.call_type.should == "PERSON CONTACT (86)"
     Call.last.call_type.should == "WARRANT"
   end  
 
   it 'should pull the address' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.address.should == "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR"
     Call.last.address.should == "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR"
   end
 
   it 'should pull the agency' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.agency.should == "Gresham Police"
     Call.last.agency.should == "Gresham Police"
   end
 
   it 'should pull the call_last_updated' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.call_last_updated.should == "12/17/13 4:01:53 AM PST"
     Call.last.call_last_updated.should == "12/17/13 3:56:16 AM PST"
   end
 
   it 'should pull the call_id' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.call_id.should == "PG13000069982"
     Call.last.call_id.should == "PG13000069981"
   end
 
   it 'should pull the latitude' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.latitude.should == 45.525665
     Call.last.latitude.should == 45.517932
   end
   
   it 'should pull the longitude' do
-    Call.import_from_xml_uri(File.open("spec/fixtures/call_data_1.cfm"))
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
     Call.first.longitude.should == -122.460767
     Call.last.longitude.should == -122.466783
   end
