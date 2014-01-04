@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104004007) do
+ActiveRecord::Schema.define(version: 20131224122400) do
 
   create_table "calls", force: true do |t|
     t.string   "call_id"
@@ -20,10 +20,9 @@ ActiveRecord::Schema.define(version: 20140104004007) do
     t.string   "agency"
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "call_last_updated", limit: 255
+    t.string   "call_last_updated"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "zip"
   end
 
 end
