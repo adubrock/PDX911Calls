@@ -15,23 +15,13 @@ describe Call do
     VCR.use_cassette('xml_data') do
       Call.import_from_xml_uri("http://www.portlandonline.com/scripts/911incidents.cfm")
       Call.count.should == 100
-<<<<<<< HEAD
-      Call.first.attributes.should include("address" => "2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR",
+      Call.find_by_call_id("PG13000072425").attributes.should include("address" => "2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR",
                                            "agency" => "Gresham Police",
                                            "call_id" => "PG13000072425",
                                            "call_last_updated" => "Sat, 28 Dec 2013 17:47:10 PST -08:00",
                                            "call_type" => "UNDESCRIBED INCIDENT",
                                            "latitude" => 45.514193,
                                            "longitude" => -122.457471)
-=======
-      Call.first.attributes.should include("address" => "NE 137TH AVE / NE SAN RAFAEL ST, PORTLAND, OR",
-                                           "agency" => "Portland Police",
-                                           "call_id" => "PP13000423073",
-                                           "call_last_updated" => "12/28/13 5:49:15 PM PST",
-                                           "call_type" => "UNWANTED PERSON",
-                                           "latitude" => 45.53728,
-                                           "longitude" => -122.522217)
->>>>>>> 5aae6eb62f37a94d102307faf3086d00d37dcf0f
     end
   end
 
@@ -85,7 +75,7 @@ describe Call do
 
   it "sorts the calls by date and time" do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.first.call_last_updated.should == "1/4/14 11:39:19 AM PST"
-    Call.last.call_last_updated.should == "1/4/14 10:51:44 AM PST"
+    Call.first.call_last_updated.should == "Sat, 04 Jan 2014 11:39:19 PST -08:00"
+    Call.last.call_last_updated.should == "Sat, 04 Jan 2014 10:51:44 PST -08:00"
   end
 end
