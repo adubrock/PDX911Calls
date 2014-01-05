@@ -1,0 +1,1 @@
+json.extract! @call, :call_id, :call_type, :address, :agency, :latitude, :longitude, :call_last_updated, :created_at, :updated_at, :zip
