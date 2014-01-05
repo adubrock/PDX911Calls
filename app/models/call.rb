@@ -1,9 +1,8 @@
 require 'open-uri'
 
 class Call < ActiveRecord::Base
-#  geocoded_by :address
-#  after_validation :geocode
-
+  default_scope :order => 'call_last_updated DESC'
+  
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri)).remove_namespaces!
     doc.search('entry').each do |entry|
@@ -25,7 +24,7 @@ class Call < ActiveRecord::Base
       end
     end
   end
-  
+
   class XmlParser
     def self.parse_call_id(entry)
       entry.at_css('id').text[/\w+$/]

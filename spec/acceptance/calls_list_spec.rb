@@ -25,9 +25,9 @@ describe 'homepage' do
   
     visit "/"
     
-    row_count.should == 20
-    calls[0].should include(call_last_updated:  "1/4/14 11:39:19 AM PST")
-    calls[19].should include(call_last_updated: "1/4/14 11:15:46 AM PST")
+    calls.count.should == 20
+    calls.first[:call_last_updated].should == "1/4/14 11:39:19 AM PST"
+    calls.last[:call_last_updated].should == "1/4/14 11:15:46 AM PST"
   end
 
   it 'should have a map' do
@@ -48,14 +48,5 @@ describe 'homepage' do
       {call_type: row_data[0], address: row_data[1], agency: row_data[2], call_last_updated: row_data[3], call_id: row_data[4], latitude: row_data[5], longitude: row_data[6]}
     end
   end
-
-  def row_count
-    all(".calls tbody tr").count
-  end
 end
-
-#    Call.first.call_last_updated.should == "1/4/14 11:39:19 AM PST"
-#    Call.last.call_last_updated.should == "1/4/14 10:51:44 AM PST"
-
-
     
