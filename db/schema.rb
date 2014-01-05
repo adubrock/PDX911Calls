@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105085600) do
+ActiveRecord::Schema.define(version: 20140105083400) do
 
   create_table "calls", force: true do |t|
     t.string   "call_id"
