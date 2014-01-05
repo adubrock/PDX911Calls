@@ -18,7 +18,7 @@ describe Call do
       Call.first.attributes.should include("address" => "2400 BLOCK OF NW BURNSIDE CT, GRESHAM, OR",
                                            "agency" => "Gresham Police",
                                            "call_id" => "PG13000072425",
-                                           "call_last_updated" => "12/28/13 5:47:10 PM PST",
+                                           "call_last_updated" => "Sat, 28 Dec 2013 17:47:10 PST -08:00",
                                            "call_type" => "UNDESCRIBED INCIDENT",
                                            "latitude" => 45.514193,
                                            "longitude" => -122.457471)
@@ -51,8 +51,8 @@ describe Call do
 
   it 'should pull the call_last_updated' do
     Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
-    Call.first.call_last_updated.should == "12/17/13 4:01:53 AM PST"
-    Call.last.call_last_updated.should == "12/17/13 3:56:16 AM PST"
+    Call.first.call_last_updated.should == "Tue, 17 Dec 2013 04:01:53 PST -08:00"
+    Call.last.call_last_updated.should == "Tue, 17 Dec 2013 03:56:16 PST -08:00"
   end
 
   it 'should pull the call_id' do

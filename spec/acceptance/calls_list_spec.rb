@@ -10,9 +10,9 @@ describe 'homepage' do
 
     calls.should == [
       ["Type",                "Address",                                     "Agency",          "Call Last Updated",       "Call ID #",     "Latitude",  "Longitude"],
-      ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR",    "Gresham Police",  "12/17/13 4:01:53 AM PST", "PG13000069982", "45.525665", "-122.460767"],
-      ["TRAFFIC STOP",        "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR", "Portland Police", "12/17/13 3:56:31 AM PST", "PP13000411200", "45.492759", "-122.580967"],
-      ["WARRANT",             "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR",   "Gresham Police",  "12/17/13 3:56:16 AM PST", "PG13000069981", "45.517932", "-122.466783"],
+      ["PERSON CONTACT (86)", "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR",    "Gresham Police",  "2013-12-17 04:01:53 -0800", "PG13000069982", "45.525665", "-122.460767"],
+      ["TRAFFIC STOP",        "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR", "Portland Police", "2013-12-17 03:56:31 -0800", "PP13000411200", "45.492759", "-122.580967"],
+      ["WARRANT",             "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR",   "Gresham Police",  "2013-12-17 03:56:16 -0800", "PG13000069981", "45.517932", "-122.466783"],
     ]
   end
 

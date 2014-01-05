@@ -44,10 +44,16 @@ class Call < ActiveRecord::Base
     end
 
     def self.parse_call_last_updated(entry)
-      start_string = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
-      end_string = /&lt;/
-      entry.at_css('content').to_s[/#{start_string}(.*?)#{end_string}/m, 1]
+      entry.at_css('updated').text   
+      # data = entry.at_css('updated').text
+      # call_last_updated = Time.zone.parse(data)
     end
+
+    # def self.parse_call_last_updated(entry)
+    #   start_string = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
+    #   end_string = /&lt;/
+    #   entry.at_css('content').to_s[/#{start_string}(.*?)#{end_string}/m, 1]
+    # end
 
     def self.parse_latitude(entry)
       entry.at_css('point').text.split(" ").first
