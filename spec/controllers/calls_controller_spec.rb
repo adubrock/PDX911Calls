@@ -5,7 +5,7 @@ describe CallsController do
   describe "#index" do
     it "sets a calls instance variable" do
       calls = [1,2,3]
-      Call.stub(all: calls)
+      Call.stub(paginate: calls)
 
       get :index
 
