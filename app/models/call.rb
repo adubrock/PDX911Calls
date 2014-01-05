@@ -1,8 +1,8 @@
 require 'open-uri'
 
 class Call < ActiveRecord::Base
-  default_scope :order => 'call_last_updated DESC'
-  
+  default_scope -> { order('call_last_updated DESC') }
+
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri)).remove_namespaces!
     doc.search('entry').each do |entry|
