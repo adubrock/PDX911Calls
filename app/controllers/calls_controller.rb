@@ -1,6 +1,6 @@
 class CallsController < ApplicationController
 
-  def index 
+  def index
     @calls = Call.paginate(page: params[:page], per_page: 20)
     @hash = Gmaps4rails.build_markers(@calls) do |call, marker|
       marker.lat call.latitude
@@ -8,7 +8,7 @@ class CallsController < ApplicationController
       marker.title call.call_type
       marker.infowindow "<b>#{call.call_type}</b>
                          <p>#{call.address}</p>
-                         <i>Call last updated on: #{call.call_last_updated.strftime("%B %d, %Y %I:%M %p %Z")}</i>"
+                         <i>Call last updated at: #{call.updated_at.strftime("%B %d, %Y %I:%M %p %Z")}</i>"
     end
   end
 end

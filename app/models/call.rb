@@ -2,7 +2,7 @@ require 'open-uri'
 require 'date'
 
 class Call < ActiveRecord::Base
-  default_scope -> { order('call_last_updated DESC') }
+  default_scope -> { order('updated_at DESC') }
 
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri)).remove_namespaces!
@@ -11,15 +11,16 @@ class Call < ActiveRecord::Base
       call_type = XmlParser.parse_call_type(entry)
       address = XmlParser.parse_address(entry)
       agency = XmlParser.parse_agency(entry)
-      call_last_updated = XmlParser.parse_call_last_updated(entry) 
+      updated_at = XmlParser.parse_call_updated_at(entry)
       latitude = XmlParser.parse_latitude(entry)
       longitude = XmlParser.parse_longitude(entry)
+
       unless exists?(call_id: call_id)
-        Call.create!(call_id: call_id, 
+        Call.create!(call_id: call_id,
                      call_type: call_type,
                      address: address,
                      agency: agency,
-                     call_last_updated: call_last_updated,
+                     updated_at: updated_at,
                      latitude: latitude,
                      longitude: longitude )
       end
@@ -43,13 +44,13 @@ class Call < ActiveRecord::Base
       entry.at_css('summary').text[/\[(.*?) \#/m, 1]
     end
 
-    def self.parse_call_last_updated(entry)
-      entry.at_css('updated').text   
+    def self.parse_call_updated_at(entry)
+      entry.at_css('updated').text
       # data = entry.at_css('updated').text
       # call_last_updated = Time.zone.parse(data)
     end
 
-    # def self.parse_call_last_updated(entry)
+    # def self.parse_call_updated_at(entry)
     #   start_string = /Last Updated:&lt;\/dt&gt;\s*&lt;dd&gt;/
     #   end_string = /&lt;/
     #   entry.at_css('content').to_s[/#{start_string}(.*?)#{end_string}/m, 1]
