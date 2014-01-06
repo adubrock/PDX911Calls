@@ -8,7 +8,7 @@ class CallsController < ApplicationController
       marker.title call.call_type
       marker.infowindow "<b>#{call.call_type}</b>
                          <p>#{call.address}</p>
-                         <i>#{call.call_last_updated}</i>"
+                         <i>Call last updated on: #{call.call_last_updated.strftime("%B %d, %Y %I:%M %p %Z")}</i>"
     end
   end
 end
