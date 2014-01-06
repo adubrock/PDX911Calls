@@ -6,7 +6,9 @@ class CallsController < ApplicationController
       marker.lat call.latitude
       marker.lng call.longitude
       marker.title call.call_type
-      marker.infowindow "#{call.call_type}\n#{call.call_last_updated}"
+      marker.infowindow "<b>#{call.call_type}</b>
+                         <p>#{call.address}</p>
+                         <i>#{call.call_last_updated}</i>"
     end
   end
 end
