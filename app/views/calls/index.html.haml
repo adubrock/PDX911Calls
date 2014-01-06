@@ -23,7 +23,7 @@
         %td= call.call_type
         %td= call.address
         %td= call.agency
-        %td= call.call_last_updated
+        %td= "#{call.call_last_updated.strftime("%B %d, %Y %I:%M %p %Z")}"
         %td= call.call_id
         %td= call.latitude
         %td= call.longitude

@@ -14,9 +14,9 @@ describe 'homepage' do
     visit "/"
 
     calls.should == [
-      {call_type: "PERSON CONTACT (86)", address: "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR",    agency: "Gresham Police",  call_last_updated: "2013-12-17 04:01:53 -0800", call_id: "PG13000069982", latitude: "45.525665", longitude: "-122.460767"},
-      {call_type: "TRAFFIC STOP",        address: "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR", agency: "Portland Police", call_last_updated: "2013-12-17 03:56:31 -0800", call_id: "PP13000411200", latitude: "45.492759", longitude: "-122.580967"},
-      {call_type: "WARRANT",             address: "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR",   agency: "Gresham Police",  call_last_updated: "2013-12-17 03:56:16 -0800", call_id: "PG13000069981", latitude: "45.517932", longitude: "-122.466783"},
+      {call_type: "PERSON CONTACT (86)", address: "19600 BLOCK OF NE GLISAN ST, GRESHAM, OR",    agency: "Gresham Police",  call_last_updated: "December 17, 2013 04:01 AM PST", call_id: "PG13000069982", latitude: "45.525665", longitude: "-122.460767"},
+      {call_type: "TRAFFIC STOP",        address: "SE 80TH AVE / SE GLADSTONE ST, PORTLAND, OR", agency: "Portland Police", call_last_updated: "December 17, 2013 03:56 AM PST", call_id: "PP13000411200", latitude: "45.492759", longitude: "-122.580967"},
+      {call_type: "WARRANT",             address: "19100 BLOCK OF E BURNSIDE ST, GRESHAM, OR",   agency: "Gresham Police",  call_last_updated: "December 17, 2013 03:56 AM PST", call_id: "PG13000069981", latitude: "45.517932", longitude: "-122.466783"},
     ]
   end
 
@@ -26,8 +26,8 @@ describe 'homepage' do
     visit "/"
     
     calls.count.should == 20
-    calls.first[:call_last_updated].should == "2014-01-04 11:39:19 -0800"
-    calls.last[:call_last_updated].should == "2014-01-04 11:15:46 -0800"
+    calls.first[:call_last_updated].should == "January 04, 2014 11:39 AM PST"
+    calls.last[:call_last_updated].should == "January 04, 2014 11:15 AM PST"
   end
 
   it 'should have a map' do
