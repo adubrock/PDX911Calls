@@ -35,10 +35,18 @@ describe 'homepage' do
     page.should have_css('div.map')
   end
 
-#  it 'should have a search function' do
-#    visit "/"
-#    page.should have_css('div.search')
-#  end
+  it 'should have a search function' do
+    visit "/"
+    page.should have_field('address')
+    page.should have_field('zip')
+    page.should have_select('start_date_year', :selected => '2014')
+    page.should have_select('start_date_month', :selected => 'January')
+    page.should have_select('start_date_day', :selected => '6')
+    page.should have_select('end_date_year', :selected => '2014')
+    page.should have_select('end_date_month', :selected => 'January')
+    page.should have_select('end_date_day', :selected => '6')
+    page.should have_button('Search')
+  end
 
   def calls
     all(".calls tbody tr").map do |row|

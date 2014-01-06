@@ -1,0 +1,9 @@
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:address, "Search for calls within your area and by date (address takes precedence over zip):") %>
+  <%= text_field_tag(:address, "address") %>
+  <%= text_field_tag(:zip, "zip code") %>
+  <%= label_tag(:date, "Specify the start and end dates for your search:") %>
+  <%= select_date Date.today, prefix: :start_date %>
+  <p><%= select_date Date.today, prefix: :end_date %></p>
+  <%= submit_tag("Search") %>
+<% end %>
