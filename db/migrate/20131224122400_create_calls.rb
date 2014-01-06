@@ -7,7 +7,7 @@ class CreateCalls < ActiveRecord::Migration
       t.string :agency
       t.float :latitude
       t.float :longitude
-      t.string :call_last_updated
+      t.datetime :call_last_updated
 
       t.timestamps
     end

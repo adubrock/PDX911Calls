@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'date'
 
 class Call < ActiveRecord::Base
   default_scope -> { order('call_last_updated DESC') }
