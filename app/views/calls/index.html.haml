@@ -12,18 +12,18 @@
       %th Type
       %th Address
       %th Agency
-      %th Call Last Updated
+      %th Last Updated
       %th Call ID #
       %th Latitude
       %th Longitude
 
-  %tbody    
+  %tbody
     - @calls.each do |call|
       %tr
         %td= call.call_type
         %td= call.address
         %td= call.agency
-        %td= "#{call.call_last_updated.strftime("%B %d, %Y %I:%M %p %Z")}"
+        %td= call.updated_at.strftime("%B %d, %Y %I:%M %p %Z")
         %td= call.call_id
         %td= call.latitude
         %td= call.longitude
