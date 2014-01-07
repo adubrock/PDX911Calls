@@ -1,4 +1,4 @@
-%h1 Listing Calls
+%h1 Portland 911 Calls
 
 <!-- .search -->
 <!-- = render 'shared/search' -->
@@ -6,7 +6,7 @@
 .map
 = render 'shared/map'
 
-%table.calls
+%table.calls{:class => "table table-striped"}
   %thead
     %tr
       %th Type
@@ -14,8 +14,6 @@
       %th Agency
       %th Last Updated
       %th Call ID #
-      %th Latitude
-      %th Longitude
 
   %tbody
     - @calls.each do |call|
@@ -25,7 +23,5 @@
         %td= call.agency
         %td= call.updated_at.strftime("%B %d, %Y %I:%M %p %Z")
         %td= call.call_id
-        %td= call.latitude
-        %td= call.longitude
 
 = will_paginate
