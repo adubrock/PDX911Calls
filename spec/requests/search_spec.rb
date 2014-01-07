@@ -2,24 +2,28 @@ require 'rspec/autorun'
 require './spec/spec_helper'
 
 # describe 'search' do
+#   before { visit root_path }
 
 #   describe "with invalid information" do
 
-#     it "should not show a search result" do
-#       expect { click_button "Search" }.not_to #something
+#     describe "with invalid address" do
+#       before { fill_in 'address',  with: "Invalid Address" }
+#       it "should provide an error message and no search results" do
+#         expect { click_button "Search" }.to have_content('invalid address')
+#       end
 #     end
 
 #     describe "error messages" do
 #       before { click_button "Search" }
 #       it { should have_content('error') }
 #     end
-#   end
+  # end
 
 #   describe "with valid information" do
 
 #     describe "with valid address"
 #       before { fill_in 'address', with: "4000 NE Fremont" }
-#       it "provide search results" do
+#       it "should provide search results" do
 #         expect { click_button "Search" }.to #something
 #       end
 #     end

@@ -22,7 +22,7 @@ class Call < ActiveRecord::Base
                      agency: agency,
                      updated_at: updated_at,
                      latitude: latitude,
-                     longitude: longitude )
+                     longitude: longitude)
       end
     end
   end
@@ -33,11 +33,11 @@ class Call < ActiveRecord::Base
     end
 
     def self.parse_call_type(entry)
-      entry.at_css('title').text.split(" at ").first
+      entry.at_css('title').text.split(' at ').first
     end
 
     def self.parse_address(entry)
-      entry.at_css('title').text.split(" at ").last
+      entry.at_css('title').text.split(' at ').last
     end
 
     def self.parse_agency(entry)
@@ -49,11 +49,11 @@ class Call < ActiveRecord::Base
     end
 
     def self.parse_latitude(entry)
-      entry.at_css('point').text.split(" ").first
+      entry.at_css('point').text.split(' ').first
     end
 
     def self.parse_longitude(entry)
-      entry.at_css('point').text.split(" ").last
+      entry.at_css('point').text.split(' ').last
     end
   end
 end
