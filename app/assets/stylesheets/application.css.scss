@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+*{box-sizing: border-box;}
 $primaryColor: red;
 $default: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -16,10 +16,12 @@ header {
   width: 100%;
 }
 
-div .table {
-  position: relative;
-  z-index: 1;
-  box-shadow: #666 0 0 10px 0;
+.table {
+margin: 0;
+box-shadow: #666 0 0 10px 0;
+z-index: 1;
+position: relative;
+padding: 10px
 }
 
 table {
@@ -36,7 +38,7 @@ tbody {
      background: #f9f9f9;
    }
    &:hover {
-     background: lighten($primaryColor, 50%);
+     background: #ffffd7;
    }
  }
 }
@@ -46,7 +48,7 @@ th, td {
 }
 
 th {
- font: bold 1em $default;
+ font: bold 0.8em $default;
  color: #999999;
  border-bottom: 2px solid #666666;
  padding: 3px 9px;
@@ -54,7 +56,7 @@ th {
 }
 
 td {
- font: normal 1.3em $default;
+ font: normal 1em $default;
  border-bottom: 1px solid #cccccc;
  padding: 12px 9px;
  line-height: 1.6em;
@@ -63,4 +65,8 @@ td {
    margin: 0;
    line-height: 1.2em;
  }
+}
+
+pagination {
+  float: left;
 }
