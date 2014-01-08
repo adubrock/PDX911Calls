@@ -3,6 +3,7 @@ require 'date'
 
 class Call < ActiveRecord::Base
   default_scope -> { order('updated_at DESC') }
+  validates_uniqueness_of :call_id
 
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri)).remove_namespaces!
@@ -15,15 +16,13 @@ class Call < ActiveRecord::Base
       latitude = XmlParser.parse_latitude(entry)
       longitude = XmlParser.parse_longitude(entry)
 
-      unless exists?(call_id: call_id)
-        Call.create!(call_id: call_id,
-                     call_type: call_type,
-                     address: address,
-                     agency: agency,
-                     updated_at: updated_at,
-                     latitude: latitude,
-                     longitude: longitude)
-      end
+      Call.create(call_id: call_id,
+                  call_type: call_type,
+                  address: address,
+                  agency: agency,
+                  updated_at: updated_at,
+                  latitude: latitude,
+                  longitude: longitude)
     end
   end
 
