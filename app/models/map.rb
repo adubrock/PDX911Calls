@@ -8,6 +8,6 @@ class Map
       marker.infowindow "<b>#{call.call_type}</b>
                          <p>#{call.address}</p>
                          <i>Call last updated at: #{call.updated_at.strftime("%B %d, %Y %I:%M %p %Z")}</i>"
-      end
+    end
   end
 end
