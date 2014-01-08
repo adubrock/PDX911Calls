@@ -1,7 +1,11 @@
 @import "bootstrap";
-*{box-sizing: border-box;}
 $primaryColor: red;
 $default: "Helvetica Neue", Helvetica, Arial, sans-serif;
+*{box-sizing: border-box;}
+
+#map img {
+  max-width: none;
+}
 
 header {
   font: bold 2.2em $default;
@@ -12,16 +16,12 @@ header {
   margin: 0px;
 }
 
-.map {
-  width: 100%;
-}
-
 .table {
-margin: 0;
-box-shadow: #666 0 0 10px 0;
-z-index: 1;
-position: relative;
-padding: 10px
+  margin: 0;
+  box-shadow: #666 0 0 10px 0;
+  z-index: 1;
+  position: relative;
+  padding: 10px
 }
 
 table {
