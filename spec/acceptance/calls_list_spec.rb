@@ -1,11 +1,6 @@
 require 'rspec/autorun'
 require './spec/spec_helper'
 
-module Page
-  class Call < Struct.new(:call_type, :address, :agency, :call_last_updated, :call_id, :latidude, :longitude)
-  end
-end
-
 describe 'homepage' do
 
   it 'converts XML into a list of calls' do
