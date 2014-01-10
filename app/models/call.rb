@@ -4,12 +4,13 @@ require 'date'
 class Call < ActiveRecord::Base
   default_scope -> { order('updated_at DESC') }
   validates_uniqueness_of :call_id
-  # reverse_geocoded_by :latitude, :longitude do |call,results|
-  #   if geo = results.first
-  #   call.zip = geo.postal_code
-  #   end
-  # end
-  # after_validation :reverse_geocode
+  reverse_geocoded_by :latitude, :longitude do |call,results|
+    if geo = results.first
+    call.zip = geo.postal_code
+    sleep 0.1
+    end
+  end
+  after_validation :reverse_geocode
 
   def self.import_from_xml_uri(uri)
     doc = Nokogiri::XML(open(uri)).remove_namespaces!
@@ -28,9 +29,7 @@ class Call < ActiveRecord::Base
                   agency: agency,
                   updated_at: updated_at,
                   latitude: latitude,
-                  longitude: longitude,
-                  zip: '')
-
+                  longitude: longitude,)
     end
   end
 
