@@ -30,18 +30,21 @@ describe 'homepage' do
     page.should have_css('div.map')
   end
 
-#  it 'should have a search function' do
-#    visit "/"
-#    page.should have_field('address')
-#    page.should have_field('zip')
-#    page.should have_select('start_date_year', :selected => '2014')
-#    page.should have_select('start_date_month', :selected => 'January')
-#    page.should have_select('start_date_day', :selected => '6')
-#    page.should have_select('end_date_year', :selected => '2014')
-#    page.should have_select('end_date_month', :selected => 'January')
-#    page.should have_select('end_date_day', :selected => '6')
-#    page.should have_button('Search')
-#  end
+  it 'should have a search function' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+
+    visit "/"
+    fill_in('search', :with => 'fire')
+    click_on('Search')
+
+    calls.should == [
+      { call_type: "MED - MEDICAL", address: "0 CONCOURSE A PIA , PORTLAND, OR", agency: "Portland Fire", updated_at: "January 04, 2014 11:27 AM PST", call_id: "RP14000000816" },
+      { call_type: "TA1PED - TRAFFIC ACCIDENT - PEDESTRIAN OR BIKE", address: "NE MARTIN LUTHER KING JR BLVD / NE COUCH ST, PORTLAND, OR", agency: "Portland Fire", updated_at: "January 04, 2014 11:26 AM PST", call_id: "RP14000000818" },
+      { call_type: "MED - MEDICAL", address: "3100 BLOCK OF SE POWELL BLVD, PORTLAND, OR", agency: "Portland Fire", updated_at: "January 04, 2014 11:18 AM PST", call_id: "RP14000000815" },
+      { call_type: "MED - MEDICAL", address: "0 CONCOURSE C PIA , PORTLAND, OR", agency: "Portland Fire",  updated_at: "January 04, 2014 11:16 AM PST", call_id: "RP14000000813" },
+      { call_type: "MED - MEDICAL", address: "0 CONCOURSE A PIA , PORTLAND, OR", agency: "Airport Fire", updated_at: "January 04, 2014 11:13 AM PST", call_id: "RA14000000023" },
+    ]
+  end
 
   def calls
     all(".calls tbody tr").map do |row|
@@ -52,4 +55,3 @@ describe 'homepage' do
     end
   end
 end
-
