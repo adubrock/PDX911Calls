@@ -78,4 +78,9 @@ describe Call do
     Call.first.updated_at.should == "Sat, 04 Jan 2014 11:39:19 PST -08:00"
     Call.last.updated_at.should == "Sat, 04 Jan 2014 10:51:44 PST -08:00"
   end
+
+  it 'searches the agency field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("fire").count.should == 5
+  end
 end

@@ -25,6 +25,10 @@ class Call < ActiveRecord::Base
                   longitude: longitude)
     end
   end
+  
+  def self.search(term)
+    Call.where("agency LIKE '%#{term}%'")
+  end
 
   class XmlParser
     def self.parse_call_id(entry)
