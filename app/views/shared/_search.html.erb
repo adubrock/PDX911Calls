@@ -1,4 +1,4 @@
 <%= form_tag("/search", method: "get") do %>
-  <%= text_field_tag :search, "Search by keyword (address, street, zip or date)" %>
+  <%= text_field_tag :search %>
   <%= submit_tag "Search", :name => nil %>
 <% end %>

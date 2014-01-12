@@ -1,6 +1,14 @@
 require 'rspec/autorun'
 require './spec/spec_helper'
 
+describe 'search' do
+  
+  it 'searches the agency field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.where("agency LIKE '%Fire%'").count.should == 5
+  end
+end
+
 # describe 'search' do
 #   before { visit root_path }
 
