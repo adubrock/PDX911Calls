@@ -24,7 +24,6 @@ gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'gmaps4rails'
 gem 'nokogiri'
-gem 'geocoder'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
