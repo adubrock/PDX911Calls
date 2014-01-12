@@ -83,4 +83,14 @@ describe Call do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
     Call.search("fire").count.should == 5
   end
+
+  it 'searches the call_type field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("med").count.should == 4
+  end
+
+  it 'searches the address field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("powell").count.should == 3
+  end
 end
