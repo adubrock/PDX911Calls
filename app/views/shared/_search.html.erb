@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 <%= form_tag("/search", method: "get") do %>
   <%= text_field_tag :search %>
   <%= submit_tag "Search", :name => nil %>
+=======
+<%= form_tag("/search", method: "get", :class => "search-field") do %>
+  <%= text_field_tag :search, "Search Calls", :class => "search-input" %>
+  <%= submit_tag "→", :name => nil, :class => "search-button" %>
+>>>>>>> Stashed changes
 <% end %>
