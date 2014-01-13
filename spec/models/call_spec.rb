@@ -93,4 +93,14 @@ describe Call do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
     Call.search("powell").count.should == 3
   end
+
+  it 'searches the date field for a specific day' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("01/04/2014").count.should == 29
+  end
+
+  it 'searches the date field for a specific month' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("01/2014").count.should == 29
+  end
 end

@@ -27,7 +27,12 @@ class Call < ActiveRecord::Base
   end
   
   def self.search(term)
-    Call.where("agency LIKE '%#{term}%' OR call_type LIKE '%#{term}%' OR address LIKE '%#{term}%' OR updated_at LIKE '%#{term}%'")
+    Call.where("agency LIKE '%#{term}%'
+             OR call_type LIKE '%#{term}%'
+             OR address LIKE '%#{term}%'
+             OR updated_at LIKE '%#{term}%'
+             OR strftime('%m/%d/%Y', updated_at) LIKE '%#{term}%'
+             OR strftime('%m/%Y', updated_at) LIKE '%#{term}%'")
   end
 
   class XmlParser

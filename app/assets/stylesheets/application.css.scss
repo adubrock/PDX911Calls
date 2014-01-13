@@ -7,6 +7,12 @@ $default: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: none;
 }
 
+#search {
+  width: 35%;
+  min-width: 300px;
+  max-width: 450px;  
+}
+
 header {
   font: bold 2.2em $default;
   padding: 20px;
