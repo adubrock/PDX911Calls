@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140106161300) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "calls", force: true do |t|
     t.string   "call_id"
     t.string   "call_type"

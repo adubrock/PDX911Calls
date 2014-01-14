@@ -12,7 +12,7 @@ class Call < ActiveRecord::Base
       call_type = XmlParser.parse_call_type(entry)
       address = XmlParser.parse_address(entry)
       agency = XmlParser.parse_agency(entry)
-      updated_at = XmlParser.parse_call_updated_at(entry)
+      updated_at = XmlParser.parse_updated_at(entry)
       latitude = XmlParser.parse_latitude(entry)
       longitude = XmlParser.parse_longitude(entry)
 
@@ -27,12 +27,14 @@ class Call < ActiveRecord::Base
   end
   
   def self.search(term)
-    Call.where("agency LIKE '%#{term}%'
-             OR call_type LIKE '%#{term}%'
-             OR address LIKE '%#{term}%'
-             OR updated_at LIKE '%#{term}%'
-             OR strftime('%m/%d/%Y', updated_at) LIKE '%#{term}%'
-             OR strftime('%m/%Y', updated_at) LIKE '%#{term}%'")
+    datetime = Chronic.parse(term)
+    unless datetime == nil
+      date = datetime.to_date
+    end
+    where("agency ilike :term
+        OR call_type ilike :term
+        OR address ilike :term
+        OR updated_at = :date", term: "%#{term}%", date: date)
   end
 
   class XmlParser
@@ -52,7 +54,7 @@ class Call < ActiveRecord::Base
       entry.at_css('summary').text[/\[(.*?) \#/m, 1]
     end
 
-    def self.parse_call_updated_at(entry)
+    def self.parse_updated_at(entry)
       entry.at_css('updated').text
     end
 

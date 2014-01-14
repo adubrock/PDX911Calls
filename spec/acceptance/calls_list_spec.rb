@@ -35,7 +35,7 @@ describe 'homepage' do
 
     visit "/"
     fill_in('search', :with => 'fire')
-    click_on('Search')
+    click_on('→')
 
     calls.should == [
       { call_type: "MED - MEDICAL", address: "0 CONCOURSE A PIA , PORTLAND, OR", agency: "Portland Fire", updated_at: "January 04, 2014 11:27 AM PST", call_id: "RP14000000816" },
