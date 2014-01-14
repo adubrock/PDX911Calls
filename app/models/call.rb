@@ -27,14 +27,13 @@ class Call < ActiveRecord::Base
   end
   
   def self.search(term)
-    datetime = Chronic.parse(term)
-    unless datetime == nil
-      date = datetime.to_date
-    end
     where("agency ilike :term
         OR call_type ilike :term
         OR address ilike :term
-        OR updated_at = :date", term: "%#{term}%", date: date)
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YY') ilike :term
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YYYY') ilike :term
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD') ilike :term
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD, YYYY') ilike :term", term: "%#{term}%")
   end
 
   class XmlParser
