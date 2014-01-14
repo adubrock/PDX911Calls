@@ -37,6 +37,7 @@ class Call < ActiveRecord::Base
     where("agency ilike :term
         OR call_type ilike :term
         OR address ilike :term
+        OR zip ilike :term
         OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YY') ilike :term
         OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YYYY') ilike :term
         OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD') ilike :term
