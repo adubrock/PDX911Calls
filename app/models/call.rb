@@ -33,7 +33,8 @@ class Call < ActiveRecord::Base
         OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YY') ilike :term
         OR to_char(updated_at::timestamptz at time zone 'PST', 'MM/DD/YYYY') ilike :term
         OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD') ilike :term
-        OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD, YYYY') ilike :term", term: "%#{term}%")
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth DD, YYYY') ilike :term
+        OR to_char(updated_at::timestamptz at time zone 'PST', 'FMMonth FMDD, YYYY') ilike :term", term: "%#{term}%")
   end
 
   class XmlParser

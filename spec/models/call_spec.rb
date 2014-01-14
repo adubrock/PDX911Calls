@@ -97,10 +97,19 @@ describe Call do
   it 'searches the date field for a specific day' do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
     Call.search("01/04/2014").count.should == 29
+    Call.search("01/04/14").count.should == 29
+    Call.search("01/04").count.should == 29
+    Call.search("January 04, 2014").count.should == 29
+    Call.search("January 4, 2014").count.should == 29
   end
 
   it 'searches the date field for a specific month' do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.search("01/2014").count.should == 29
+    Call.search("January").count.should == 29
+  end
+
+  it 'searches the date field for a specific year' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("2014").count.should == 29
   end
 end
