@@ -3,25 +3,18 @@ development:
   encoding: utf8
   database: project_development
   pool: 5
-  username: andrewdu
+  username:
   password: 
   host: localhost
   port: 5432
 
-test: &TEST
+test:
   adapter: postgresql
   encoding: utf8
   database: project_test
   pool: 5
-  username: andrewdu
+  username:
   password: 
   host: localhost
   port: 5432
 
-production:
-  adapter: postgresql
-  encoding: utf8
-  database: project_production
-  pool: 5
-  username: 
-  password:
