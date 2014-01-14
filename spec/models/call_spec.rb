@@ -78,4 +78,38 @@ describe Call do
     Call.first.updated_at.should == "Sat, 04 Jan 2014 11:39:19 PST -08:00"
     Call.last.updated_at.should == "Sat, 04 Jan 2014 10:51:44 PST -08:00"
   end
+
+  it 'searches the agency field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("fire").count.should == 5
+  end
+
+  it 'searches the call_type field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("med").count.should == 4
+  end
+
+  it 'searches the address field' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("powell").count.should == 3
+  end
+
+  it 'searches the date field for a specific day' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("01/04/2014").count.should == 29
+    Call.search("01/04/14").count.should == 29
+    Call.search("01/04").count.should == 29
+    Call.search("January 04, 2014").count.should == 29
+    Call.search("January 4, 2014").count.should == 29
+  end
+
+  it 'searches the date field for a specific month' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("January").count.should == 29
+  end
+
+  it 'searches the date field for a specific year' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("2014").count.should == 29
+  end
 end
