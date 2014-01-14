@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140110195806) do
     t.string   "agency"
     t.float    "latitude"
     t.float    "longitude"
-    t.datetime "updated_at", limit: 255
+    t.datetime "updated_at"
     t.datetime "created_at"
     t.string   "zip"
   end
