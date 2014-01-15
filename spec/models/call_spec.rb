@@ -112,4 +112,9 @@ describe Call do
     Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
     Call.search("2014").count.should == 29
   end
+
+    it 'searches the zip field ' do
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.search("97230").count.should == 4
+  end
 end
