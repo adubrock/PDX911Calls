@@ -94,27 +94,72 @@ describe Call do
     Call.search("powell").count.should == 3
   end
 
-  it 'searches the date field for a specific day' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.search("01/04/2014").count.should == 29
-    Call.search("01/04/14").count.should == 29
-    Call.search("01/04").count.should == 29
-    Call.search("January 04, 2014").count.should == 29
-    Call.search("January 4, 2014").count.should == 29
+  it 'searches the date field for a specific day MM/DD/YYYY' do
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,5,0,0,0,'-8'))
+    call_5 = Call.create!(call_id: 5, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))  
+    Call.search("01/04/2014").should == [call_1, call_2]
+  end
+
+  it 'searches the date field for a specific day MM/DD/YY' do
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,5,0,0,0,'-8'))
+    call_5 = Call.create!(call_id: 5, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))  
+    Call.search("01/04/14").should == [call_1, call_2]
+  end
+
+  it 'searches the date field for a specific day MM/DD' do
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,5,0,0,0,'-8'))
+    call_5 = Call.create!(call_id: 5, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))  
+    Call.search("01/04/14").should == [call_1, call_2]
+  end
+
+  it 'searches the date field for a specific day Month, DD, YYYY' do
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,5,0,0,0,'-8'))
+    call_5 = Call.create!(call_id: 5, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))  
+    Call.search("January 04, 2014").should == [call_1, call_2]
+  end
+
+  it 'searches the date field for a specific day Month, D, YYYY' do
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,5,0,0,0,'-8'))
+    call_5 = Call.create!(call_id: 5, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))  
+    Call.search("January 4, 2014").should == [call_1, call_2]
   end
 
   it 'searches the date field for a specific month' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.search("January").count.should == 29
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,2,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2014,3,3,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    Call.search("January").should == [call_1, call_4]
   end
 
   it 'searches the date field for a specific year' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.search("2014").count.should == 29
+    call_1 = Call.create!(call_id: 1, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_2 = Call.create!(call_id: 2, updated_at: DateTime.new(2014,1,4,0,0,0,'-8'))
+    call_3 = Call.create!(call_id: 3, updated_at: DateTime.new(2013,1,4,0,0,0,'-8'))
+    call_4 = Call.create!(call_id: 4, updated_at: DateTime.new(2014,1,3,0,0,0,'-8'))
+    Call.search("2014").should == [call_1, call_2, call_4]
   end
 
-    it 'searches the zip field ' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
-    Call.search("97230").count.should == 4
+  it 'searches the zip field ' do
+    call_1 = Call.create!(call_id: 1, zip: 97230)
+    call_2 = Call.create!(call_id: 2, zip: 97231)
+    call_3 = Call.create!(call_id: 3, zip: 97230)
+    call_4 = Call.create!(call_id: 4, zip: 97229)
+    Call.search("97230").should == [call_3, call_1]
   end
 end
