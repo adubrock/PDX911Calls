@@ -4,7 +4,7 @@ require './spec/spec_helper'
 describe 'homepage' do
 
   it 'converts XML into a list of calls' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_1.cfm")
+    Call.import_from_xml_uri("spec/fixtures/call_data_1.xml")
 
     visit "/"
 
@@ -16,7 +16,7 @@ describe 'homepage' do
   end
 
   it 'should list the 20 newest calls, newest to oldest' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.xml")
 
     visit "/"
 
@@ -31,7 +31,7 @@ describe 'homepage' do
   end
 
   it 'should have a search function' do
-    Call.import_from_xml_uri("spec/fixtures/call_data_3.cfm")
+    Call.import_from_xml_uri("spec/fixtures/call_data_3.xml")
 
     visit "/"
     fill_in('search', :with => 'fire')
