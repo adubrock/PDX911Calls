@@ -1,12 +1,13 @@
 %header
   %h1 Portland 911 Calls
   .search
-    = render 'shared/search'
+    = form_tag "/search", method: "get", :class => "search-field" do
+      = text_field_tag :search, "", :class => "search-input", :placeholder => "Search Calls"
+      = submit_tag "→", :name => nil, :class => "search-button"
 
-.map
-  = render 'shared/map'
+#map
 
-%div{:class => "table"}
+.table
   %table.calls
     %thead
       %tr
@@ -26,3 +27,7 @@
           %td= call.call_id
 
   = will_paginate
+
+:javascript
+  var markerAttributes = #{raw @markers.to_json};
+
