@@ -1,10 +1,14 @@
+//= require jquery
+
+var markers;
+
 google.maps.event.addDomListener(window, 'load', function initialize() {
 
   var map = new google.maps.Map(document.getElementById("map"));
   var bounds = new google.maps.LatLngBounds();
   var focusedInfoWindow;
 
-  var markers = markerAttributes.map(function(attributes) {
+  markers = markerAttributes.map(function(attributes) {
     var myLatlng = new google.maps.LatLng(attributes.lat, attributes.lng);
     bounds.extend(myLatlng);
 
@@ -13,6 +17,8 @@ google.maps.event.addDomListener(window, 'load', function initialize() {
       map: map,
       title: attributes.title
     });
+
+    marker.callId = attributes.callId;
 
     var infoWindow = new google.maps.InfoWindow({
       content: attributes.infoWindow
@@ -25,8 +31,18 @@ google.maps.event.addDomListener(window, 'load', function initialize() {
       }
       focusedInfoWindow = infoWindow;
     });
+
+    return marker;
   })
 
   map.fitBounds(bounds);
 });
 
+$(".calls tr").click(function() {
+  var callId = $(this).find(".call_id").text();
+  markers.forEach(function(marker) {
+    if(marker.callId === callId) {
+      google.maps.event.trigger(marker, "click")
+    }
+  });
+});

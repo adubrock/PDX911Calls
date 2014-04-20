@@ -24,7 +24,7 @@
           %td= call.address
           %td= call.agency
           %td= call.updated_at.strftime("%B %d, %Y %I:%M %p %Z")
-          %td= call.call_id
+          %td.call_id= call.call_id
 
   = will_paginate
 

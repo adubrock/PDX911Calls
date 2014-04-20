@@ -1,7 +1,9 @@
 class Map
   def self.markers(calls)
     calls.map do |call|
-      { lat: call.latitude,
+      { 
+        callId: call.call_id,
+        lat: call.latitude,
         lng: call.longitude,
         title: call.call_type,
         infoWindow: "<b>#{call.call_type}</b>
