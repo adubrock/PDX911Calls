@@ -55,7 +55,6 @@ GEM
     execjs (2.0.2)
     ffi (1.9.3)
     geocoder (1.1.9)
-    gmaps4rails (2.1.1)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -160,7 +159,6 @@ DEPENDENCIES
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
   geocoder
-  gmaps4rails
   haml
   nokogiri
   pg (= 0.15.1)
