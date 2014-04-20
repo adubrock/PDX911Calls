@@ -6,6 +6,9 @@
       = submit_tag "→", :name => nil, :class => "search-button"
 
 #map
+= content_for :js do
+  :javascript
+    $("#map").map(#{raw @markers.to_json});
 
 .table
   %table.calls
@@ -27,7 +30,4 @@
           %td.call_id= call.call_id
 
   = will_paginate
-
-:javascript
-  var markerAttributes = #{raw @markers.to_json};
 
