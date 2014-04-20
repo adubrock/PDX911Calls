@@ -27,7 +27,7 @@ describe 'homepage' do
 
   it 'should have a map' do
     visit "/"
-    page.should have_css('div.map')
+    page.should have_css('#map')
   end
 
   it 'should have a search function' do
