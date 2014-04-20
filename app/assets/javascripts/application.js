@@ -4,7 +4,7 @@ var markers;
 
 google.maps.event.addDomListener(window, 'load', function initialize() {
 
-  var map = new google.maps.Map(document.getElementById("map"));
+  var map = new google.maps.Map(document.getElementById("map"), { scrollwheel: false });
   var bounds = new google.maps.LatLngBounds();
   var focusedInfoWindow;
 
@@ -25,11 +25,13 @@ google.maps.event.addDomListener(window, 'load', function initialize() {
     });
 
     google.maps.event.addListener(marker, 'click', function() {
+      map.setCenter(marker.getPosition());
       infoWindow.open(map,marker);
       if(focusedInfoWindow) {
         focusedInfoWindow.close();
       }
       focusedInfoWindow = infoWindow;
+      document.body.scrollTop = 0;
     });
 
     return marker;
