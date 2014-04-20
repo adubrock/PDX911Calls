@@ -8,6 +8,10 @@ $default: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 400px;
 }
 
+.gmnoprint img {
+  max-width: none;
+}
+
 header {
   float: left;
   width: 100%;
