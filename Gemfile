@@ -25,6 +25,8 @@ gem 'coffee-rails', '4.0.1'
 gem 'nokogiri'
 gem 'geocoder'
 
+gem "jquery-rails"
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
