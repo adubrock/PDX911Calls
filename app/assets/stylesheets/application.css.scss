@@ -110,6 +110,10 @@ td {
  }
 }
 
+tbody tr:hover {
+  cursor: pointer;
+}
+
 pagination {
   float: left;
 }
